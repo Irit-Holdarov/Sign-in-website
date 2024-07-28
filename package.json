@@ -1,0 +1,14 @@
+{
+  "name": "signin-website",
+  "version": "1.0.0",
+  "description": "front-end site for a company specializing in admissions management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
