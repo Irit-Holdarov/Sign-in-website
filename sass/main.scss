@@ -1,17 +1,14 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
+@import "base/animations";
+@import "base/base";
+@import "base/topography";
+@import "base/utilities";
 
-html {
-  font-size: 62.5%;
+@import "components/button";
 
-}
+@import "layout/header";
 
-body {
-  font-family: sans-serif;
-}
+@import "pages/home";

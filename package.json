@@ -4,11 +4,14 @@
   "description": "front-end site for a company specializing in admissions management.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irit-Holdarov/Sign-in-website"
+  },
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "node-sass": "^9.0.0"
   }
 }

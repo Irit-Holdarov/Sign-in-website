@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10/16=0.625  אם אנחנו רוצים 10 פיקסל נחלק ב16 פיקסל שזה המספר הדיפולטיבי ונרשום אותם באחוזים*/
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
