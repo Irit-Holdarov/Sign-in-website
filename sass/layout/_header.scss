@@ -1,0 +1,52 @@
+.header {
+  height: 90px;
+  padding: 10px 75px;
+  @include flex-center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  background: linear-gradient(to right, $color-beige, $color-white);
+
+  &__info {
+    @include flex-center;
+    gap: 60px;
+    font-size: 2rem;
+  }
+
+  &__logo {
+    height: 7.5rem;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  &__phone-number {
+    font-weight: 600;
+    @include link-style($color-black);
+  }
+
+  &header__navigate {
+    @include flex-center;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      gap: 60px;
+      list-style: none;
+      flex-direction: row-reverse;
+    }
+
+    &__item a {
+      @include link-style($color-black);
+
+      &:hover {
+        box-shadow: inset 0 -3px $color-orange-red;
+        padding-bottom: 20px;
+        transition: box-shadow 0.3s ease, padding-bottom 0.1s ease;
+      }
+
+    }
+
+  }
+
+}
