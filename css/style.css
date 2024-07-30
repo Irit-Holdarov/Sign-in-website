@@ -1,7 +1,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(60px); }
+    transform: translateY(6rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -31,10 +31,10 @@ body {
   font-family: "Heebo", Sans-serif; }
 
 .btn:hover {
-  transform: translateY(-3px); }
+  transform: translateY(-0.3rem); }
 
 .btn:active {
-  transform: translateY(-1px); }
+  transform: translateY(-0.1rem); }
 
 .gallery {
   text-align: center;
@@ -52,8 +52,8 @@ body {
     top: 45%;
     transform: translate(-50%, -50%);
     width: 25%;
-    border-bottom: 3px solid #fffcf3;
-    border-top: 3px solid #fffcf3; }
+    border-bottom: 0.3rem solid #fffcf3;
+    border-top: 0.3rem solid #fffcf3; }
 
 .header {
   height: 8rem;
@@ -75,12 +75,12 @@ body {
     margin-top: 1rem; }
   .header__phone-button {
     background-color: #4e4c48;
-    padding: 5px 20px;
-    border-radius: 20px;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
     transition: all .2s;
     font-family: cursive;
     color: #fffcf3;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-decoration: none; }
   .headerheader__navigate {
     display: flex;
@@ -99,3 +99,26 @@ body {
       padding-bottom: 2rem;
       transition: box-shadow 0.3s ease, padding-bottom 0.1s ease;
       color: #DD795B; }
+
+.about {
+  white-space: normal;
+  position: relative;
+  top: -11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .about__content {
+    box-shadow: 0 .8rem 2.8rem #858585;
+    padding: 3rem;
+    background-color: #fff;
+    width: 80%;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 1.5rem; }
+  .about__title {
+    font-size: xx-large; }
+  .about__paragraph {
+    font-size: 1.5ren; }
