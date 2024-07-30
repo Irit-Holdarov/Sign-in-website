@@ -1,4 +1,11 @@
-@charset "UTF-8";
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -7,8 +14,6 @@
   box-sizing: inherit; }
 
 html {
-  /* font-size: 10px; */
-  /* 10/16=0.625  אם אנחנו רוצים 10 פיקסל נחלק ב16 פיקסל שזה המספר הדיפולטיבי ונרשום אותם באחוזים*/
   font-size: 62.5%; }
 
 body {
@@ -25,21 +30,43 @@ body {
   line-height: 1.7;
   font-family: "Heebo", Sans-serif; }
 
+.btn:hover {
+  transform: translateY(-3px); }
+
+.btn:active {
+  transform: translateY(-1px); }
+
 .gallery {
   text-align: center;
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(157, 157, 157, 0.8), rgba(56, 56, 56, 0.5)), url(../../../img/signin-1.jpeg);
-  background-size: auto;
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../../img/signin-5.jpeg);
+  background-size: 110%;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+  animation: moveInBottom 0.7s ease-out;
+  animation-fill-mode: backwards; }
+  .gallery__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: #fffcf3;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    font-family: system-ui;
+    font-weight: normal; }
+  .gallery__title {
+    font-weight: 400; }
 
 .header {
   height: 8rem;
-  padding: 1rem 4.5rem;
+  padding: 1rem 8.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   background: linear-gradient(to right, #ece6db, #fffcf3); }
   .header__info {
