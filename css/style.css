@@ -38,27 +38,22 @@ body {
 
 .gallery {
   text-align: center;
-  height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../../img/signin-5.jpeg);
-  background-size: 100%;
-  background-position: center;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main3.jpeg);
+  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+  background-position: 0 35%;
+  transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
   animation-fill-mode: backwards; }
-  .gallery__content {
+  .gallery__logo {
     position: absolute;
     top: 45%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    color: #fffcf3;
-    border-bottom: 3px solid;
-    border-top: 3px solid;
-    font-family: system-ui;
-    font-weight: normal; }
-  .gallery__title {
-    font-weight: 400; }
+    width: 25%;
+    border-bottom: 3px solid #fffcf3;
+    border-top: 3px solid #fffcf3; }
 
 .header {
   height: 8rem;
@@ -68,7 +63,7 @@ body {
   justify-content: space-between;
   font-size: 1.5rem;
   white-space: nowrap;
-  background: linear-gradient(to right, #ece6db, #fffcf3); }
+  background: linear-gradient(to right, #c9b693, #fffcf3); }
   .header__info {
     display: flex;
     align-items: center;
