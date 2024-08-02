@@ -1,6 +1,6 @@
 .about {
   background-color: $color-primary-light-1;
-  padding: 16rem 0 20rem 0;
+  padding: 16rem 0 30rem 0;
   margin-top: -25vh;
 
   &__title {
@@ -9,7 +9,7 @@
     font-weight: 700;
     display: inline-block;
     color: $color-black;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     transition: all .2s;
 
     &:hover {
@@ -21,16 +21,35 @@
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 6rem;
   }
 
   &__text {
     margin-right: 13rem;
     font-size: $default-font-size;
     font-family: sans-serif;
+    color: $text-color;
   }
 
   &__imgs {
     margin-left: 13rem;
   }
 }
+
+// @media only screen and (max-width: 850px) {
+//   .about {
+//     padding: 20rem 0;
+
+//     &__content {
+//       display: block;
+//     }
+
+//     &__text {
+//       margin: 5rem;
+//     }
+
+//     &__imgs {
+//       margin-left: 6rem;
+//     }
+//   }
+// }
