@@ -1,8 +1,37 @@
 .footer {
-  height: 10rem;
+  height: 8rem;
   padding: 1rem 8.5rem;
-  @include flex-center;
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
-  white-space: nowrap;
   background-color: $color-primary-light-footer;
+
+  &__signin-logo {
+    width: 20%;
+  }
+
+  &__whatsapp-logo {
+    height: 4rem;
+    margin-bottom: -2px;
+  }
+
+  &__contact,
+  &__connect {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    max-width: 100%;
+    /* Ensure images are responsive */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: 3rem;
+    /* Set a specific height for the icons */
+  }
 }

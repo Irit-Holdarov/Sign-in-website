@@ -156,13 +156,30 @@ body {
       display: none; } }
 
 .footer {
-  height: 10rem;
+  height: 8rem;
   padding: 1rem 8.5rem;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  white-space: nowrap;
   background-color: #e2e2e2; }
+  .footer__signin-logo {
+    width: 20%; }
+  .footer__whatsapp-logo {
+    height: 4rem;
+    margin-bottom: -2px; }
+  .footer__contact, .footer__connect {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; }
+  .footer__link {
+    display: inline-block; }
+  .footer__icon {
+    max-width: 100%;
+    /* Ensure images are responsive */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: 3rem;
+    /* Set a specific height for the icons */ }
 
 .about {
   background-color: #F7F7F7;
