@@ -1,0 +1,36 @@
+.about {
+  background-color: $color-primary-light-1;
+  padding: 16rem 0 20rem 0;
+  margin-top: -25vh;
+
+  &__title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: $color-black;
+    letter-spacing: 3px;
+    transition: all .2s;
+
+    &:hover {
+      text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__text {
+    margin-right: 13rem;
+    font-size: $default-font-size;
+    font-family: sans-serif;
+  }
+
+  &__imgs {
+    margin-left: 13rem;
+  }
+}
