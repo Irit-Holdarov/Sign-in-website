@@ -2,12 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    { src: 'img/img-main1.jpeg', position: '0 35%' },
-    { src: 'img/img-main2.jpeg', position: '0 35%' },
-    { src: 'img/img-main3.jpeg', position: '0 65%' },
-    { src: 'img/img-main4.jpeg', position: '0 100%' },
-    { src: 'img/img-main5.jpeg', position: 'center' },
-    { src: 'img/img-main6.jpeg', position: 'center' }
+    { src: 'img/img-main/img-main1.jpeg', position: '0 35%' },
+    { src: 'img/img-main/img-main2.jpeg', position: '0 35%' },
+    { src: 'img/img-main/img-main3.jpeg', position: '0 65%' },
+    { src: 'img/img-main/img-main4.jpeg', position: '0 100%' },
+    { src: 'img/img-main/img-main5.jpeg', position: 'center' },
+    { src: 'img/img-main/img-main6.jpeg', position: 'center' }
   ]
 
   let currentIndex = 0;
