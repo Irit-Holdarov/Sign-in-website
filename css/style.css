@@ -49,23 +49,39 @@ body {
   transform: translateY(-0.1rem); }
 
 .gallery {
+  display: flex;
+  align-items: center;
   text-align: center;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main4.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main/img-main4.jpeg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
-  position: relative;
   background-position: 0 35%;
   transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  justify-content: center; }
+  .gallery__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 7rem; }
   .gallery__logo {
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    max-width: 20%;
+    max-width: 45%;
     border-bottom: 0.3rem solid #fff;
     border-top: 0.3rem solid #fff; }
+  .gallery__phone_details {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .gallery__phone_details .tel {
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      font-size: 2.5rem;
+      white-space: nowrap;
+      letter-spacing: 0.2rem; }
 
 @media only screen and (max-width: 850px) {
   .gallery__logo {
@@ -138,6 +154,15 @@ body {
       height: 4.5rem; }
     .header .nav__list {
       display: none; } }
+
+.footer {
+  height: 10rem;
+  padding: 1rem 8.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  background-color: #e2e2e2; }
 
 .about {
   background-color: #F7F7F7;

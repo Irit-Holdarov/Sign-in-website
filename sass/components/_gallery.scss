@@ -1,24 +1,43 @@
 .gallery {
+  @include flex-center;
   text-align: center;
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main/img-main4.jpeg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
-  position: relative;
   @include background-position(0 35%);
   transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
   animation-fill-mode: backwards;
+  justify-content: center;
+
+  &__content {
+    @include flex-center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 7rem;
+  }
 
   &__logo {
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    max-width: 20%;
-
+    max-width: 45%;
     border-bottom: .3rem solid $color-white;
     border-top: .3rem solid $color-white;
   }
+
+  &__phone_details {
+    @include flex-center;
+    gap: 1rem;
+
+    .tel {
+      text-decoration: none;
+      font-weight: 600;
+      color: $color-white;
+      font-size: 2.5rem;
+      white-space: nowrap;
+      letter-spacing: 0.2rem;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 850px) {

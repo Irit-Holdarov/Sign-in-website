@@ -1,0 +1,8 @@
+.footer {
+  height: 10rem;
+  padding: 1rem 8.5rem;
+  @include flex-center;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  background-color: $color-primary-light-footer;
+}
