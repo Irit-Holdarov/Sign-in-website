@@ -156,30 +156,40 @@ body {
       display: none; } }
 
 .footer {
-  height: 8rem;
-  padding: 1rem 8.5rem;
+  height: 10rem;
+  padding: 1rem 5.5rem;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  background-color: #e2e2e2; }
+  background-color: #e2e2e2;
+  justify-content: space-between; }
   .footer__signin-logo {
     width: 20%; }
-  .footer__whatsapp-logo {
-    height: 4rem;
-    margin-bottom: -2px; }
-  .footer__contact, .footer__connect {
+  .footer__logo-copyright {
+    text-align: center; }
+  .footer__connect {
     display: flex;
     align-items: center;
-    gap: 1.5rem; }
+    gap: 1.5rem;
+    margin-bottom: 10px; }
   .footer__link {
-    display: inline-block; }
+    height: 2.5rem;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem; }
   .footer__icon {
     max-width: 100%;
-    /* Ensure images are responsive */
     width: auto;
-    /* Maintain aspect ratio */
-    height: 3rem;
-    /* Set a specific height for the icons */ }
+    height: 2.1rem; }
+  .footer__text {
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap; }
+  .footer__copyright {
+    font-size: 12px; }
+  .footer .tel {
+    margin-bottom: 5px; }
 
 .about {
   background-color: #F7F7F7;

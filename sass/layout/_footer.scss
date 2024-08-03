@@ -1,37 +1,53 @@
 .footer {
-  height: 8rem;
-  padding: 1rem 8.5rem;
+  height: 10rem;
+  padding: 1rem 5.5rem;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   background-color: $color-primary-light-footer;
+  justify-content: space-between;
 
   &__signin-logo {
     width: 20%;
   }
 
-  &__whatsapp-logo {
-    height: 4rem;
-    margin-bottom: -2px;
+  &__logo-copyright {
+    text-align: center;
   }
 
-  &__contact,
   &__connect {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-bottom: 10px;
   }
 
   &__link {
-    display: inline-block;
+    height: 2.5rem;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
   }
 
   &__icon {
     max-width: 100%;
-    /* Ensure images are responsive */
     width: auto;
-    /* Maintain aspect ratio */
-    height: 3rem;
-    /* Set a specific height for the icons */
+    height: 2.1rem;
   }
+
+  &__text {
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  &__copyright {
+    font-size: 12px;
+  }
+
+  .tel {
+    margin-bottom: 5px;
+  }
+
 }
