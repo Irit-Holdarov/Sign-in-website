@@ -1,5 +1,5 @@
 .footer {
-  height: 10rem;
+  height: 9rem;
   padding: 1rem 5.5rem;
   display: flex;
   align-items: center;
@@ -8,18 +8,14 @@
   justify-content: space-between;
 
   &__signin-logo {
-    width: 20%;
-  }
-
-  &__logo-copyright {
-    text-align: center;
+    width: 15%;
   }
 
   &__connect {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 
   &__link {
@@ -36,25 +32,34 @@
     height: 2.1rem;
   }
 
-  &__text {
-    font-weight: 600;
-    color: #000;
-    white-space: nowrap;
-  }
+  // &__text {
+  //   font-weight: 600;
+  //   color: #000;
+  //   white-space: nowrap;
+  // }
 
   &__copyright {
     font-size: 12px;
+    margin-bottom: -5rem;
   }
 
-  .tel {
-    margin-bottom: 5px;
-  }
+  // .tel {
+  //   margin-bottom: 5px;
+  // }
 
 }
 
 @media only screen and (max-width: 850px) {
   .footer {
-    height: 17rem;
+    height: 13rem;
     flex-direction: column;
+
+    &__copyright {
+      margin-bottom: 0;
+    }
+
+    &__signin-logo {
+      width: 30%;
+    }
   }
 }
