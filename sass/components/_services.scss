@@ -1,0 +1,42 @@
+.services {
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
+
+  transform: skewY(-4deg);
+  margin-bottom: 6.5rem;
+
+  &>* {
+    transform: skewY(4deg);
+  }
+
+  &__flex-box {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 12rem 5rem;
+    gap: 5rem;
+  }
+
+  &__box {
+    background-color: rgba($color-white, .8);
+    padding: 1.5rem;
+    border-radius: 3px;
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__text {
+    font-size: 12px;
+  }
+
+}

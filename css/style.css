@@ -14,7 +14,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -28,7 +29,8 @@ body {
 body {
   font-weight: 400;
   line-height: 1.7;
-  font-family: "Heebo", Sans-serif; }
+  font-family: "Heebo", Sans-serif;
+  background-color: #F7F7F7; }
 
 .u-center-text {
   text-align: center; }
@@ -55,12 +57,13 @@ body {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main/img-main4.jpeg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
   background-position: 0 35%;
   transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
   animation-fill-mode: backwards;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 5rem; }
   .gallery__content {
     display: flex;
     align-items: center;
@@ -91,19 +94,19 @@ body {
 .composition {
   position: relative; }
   .composition__photo {
-    width: 50%;
+    width: 35%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
     transition: all 0.2s; }
     .composition__photo--p1 {
-      left: -5%;
-      top: -2rem; }
+      left: 10%;
+      top: 0; }
     .composition__photo--p2 {
-      right: 14%;
-      top: 2rem; }
+      right: 25%;
+      top: 3rem; }
     .composition__photo--p3 {
-      left: 20%;
+      left: 25%;
       top: 10rem; }
     .composition__photo:hover {
       transform: scale(1.1) translateY(-0.5rem);
@@ -111,6 +114,32 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.services {
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
+  transform: skewY(-4deg);
+  margin-bottom: 6.5rem; }
+  .services > * {
+    transform: skewY(4deg); }
+  .services__flex-box {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 12rem 5rem;
+    gap: 5rem; }
+  .services__box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 3px;
+    transition: transform .3s; }
+    .services__box:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
+  .services__img {
+    width: 100%; }
+  .services__title {
+    font-size: 16px; }
+  .services__text {
+    font-size: 12px; }
 
 .header {
   height: 7rem;
@@ -192,8 +221,7 @@ body {
     margin-bottom: 5px; }
 
 .about {
-  background-color: #F7F7F7;
-  padding: 16rem 0 30rem 0;
+  padding: 16rem 0 13rem 0;
   margin-top: -25vh; }
   .about__title {
     font-size: 3.5rem;
