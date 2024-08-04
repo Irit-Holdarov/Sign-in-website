@@ -17,9 +17,9 @@
   }
 
   &__box {
-    background-color: rgba($color-white, .8);
+    background-color: rgba($color-white, .7);
     padding: 1.5rem;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: transform .3s;
 
     &:hover {
@@ -46,6 +46,10 @@
     &__flex-box {
       grid-template-columns: 1fr;
       padding: 8rem 5rem;
+    }
+
+    &__img {
+      width: 70%;
     }
 
     &__box {

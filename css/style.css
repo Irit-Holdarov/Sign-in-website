@@ -124,7 +124,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .composition {
-    margin-bottom: 20rem; }
+    margin-bottom: 30rem; }
     .composition__photo--p3 {
       left: 33%;
       top: 7rem; }
@@ -144,9 +144,9 @@ body {
     padding: 12rem 5rem;
     gap: 5rem; }
   .services__box {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 1.5rem;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: transform .3s; }
     .services__box:hover {
       transform: translateY(-1.5rem) scale(1.03); }
@@ -161,6 +161,8 @@ body {
   .services__flex-box {
     grid-template-columns: 1fr;
     padding: 8rem 5rem; }
+  .services__img {
+    width: 70%; }
   .services__box {
     align-items: center;
     display: flex;
