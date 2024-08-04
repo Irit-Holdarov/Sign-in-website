@@ -1,6 +1,6 @@
 .about {
   padding: 16rem 0 13rem 0;
-  margin-top: -25vh;
+  margin-top: -20vh;
 
   &__title {
     font-size: 3.5rem;
@@ -35,20 +35,27 @@
   }
 }
 
-// @media only screen and (max-width: 850px) {
-//   .about {
-//     padding: 20rem 0;
+@media only screen and (max-width: 850px) {
+  .about {
 
-//     &__content {
-//       display: block;
-//     }
+    &__title {
+      font-size: 2.3rem;
+    }
 
-//     &__text {
-//       margin: 5rem;
-//     }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
-//     &__imgs {
-//       margin-left: 6rem;
-//     }
-//   }
-// }
+    &__text {
+      margin: 0;
+      font-size: 1.6rem;
+      padding: 0 20px;
+    }
+
+    &__imgs {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

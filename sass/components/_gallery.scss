@@ -42,8 +42,13 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .gallery__logo {
-    max-width: 40%;
-    top: 35%;
+  .gallery {
+    height: 65vh;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+
+    &__logo {
+      max-width: 40%;
+      top: 35%;
+    }
   }
 }

@@ -20,6 +20,10 @@ html {
 body {
   box-sizing: border-box; }
 
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 55.5%; } }
+
 @font-face {
   font-family: 'Heebo';
   src: url("../fonts/Heebo-Regular.ttf") format("truetype");
@@ -87,9 +91,12 @@ body {
       letter-spacing: 0.2rem; }
 
 @media only screen and (max-width: 850px) {
-  .gallery__logo {
-    max-width: 40%;
-    top: 35%; } }
+  .gallery {
+    height: 65vh;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%); }
+    .gallery__logo {
+      max-width: 40%;
+      top: 35%; } }
 
 .composition {
   position: relative; }
@@ -114,6 +121,15 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+@media only screen and (max-width: 850px) {
+  .composition {
+    margin-bottom: 20rem; }
+    .composition__photo--p3 {
+      left: 33%;
+      top: 7rem; }
+    .composition__photo--p2 {
+      right: 11%; } }
 
 .services {
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
@@ -140,6 +156,16 @@ body {
     font-size: 16px; }
   .services__text {
     font-size: 12px; }
+
+@media only screen and (max-width: 850px) {
+  .services__flex-box {
+    grid-template-columns: 1fr;
+    padding: 8rem 5rem; }
+  .services__box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; } }
 
 .header {
   height: 7rem;
@@ -220,9 +246,14 @@ body {
   .footer .tel {
     margin-bottom: 5px; }
 
+@media only screen and (max-width: 850px) {
+  .footer {
+    height: 17rem;
+    flex-direction: column; } }
+
 .about {
   padding: 16rem 0 13rem 0;
-  margin-top: -25vh; }
+  margin-top: -20vh; }
   .about__title {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -244,3 +275,17 @@ body {
     color: #494949; }
   .about__imgs {
     margin-left: 13rem; }
+
+@media only screen and (max-width: 850px) {
+  .about__title {
+    font-size: 2.3rem; }
+  .about__content {
+    display: flex;
+    flex-direction: column-reverse; }
+  .about__text {
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 0 20px; }
+  .about__imgs {
+    margin: 0;
+    text-align: center; } }

@@ -36,3 +36,19 @@
     transform: scale(0.95);
   }
 }
+
+
+@media only screen and (max-width: 850px) {
+  .composition {
+    margin-bottom: 20rem;
+
+    &__photo--p3 {
+      left: 33%;
+      top: 7rem;
+    }
+
+    &__photo--p2 {
+      right: 11%;
+    }
+  }
+}
