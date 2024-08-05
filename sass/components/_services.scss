@@ -1,29 +1,29 @@
 .services {
-  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
+  background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
 
   transform: skewY(-4deg);
   margin-bottom: 6.5rem;
+  display: flex;
+  justify-content: center;
 
   &>* {
     transform: skewY(4deg);
   }
 
-  &__flex-box {
+  &__grid-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 5rem;
-    padding: 12rem 15rem;
+    gap: 5rem 10rem;
+    padding: 12rem 0;
+    width: 80%;
   }
 
   &__box {
     background-color: rgba($color-white, .7);
-    padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: .5rem;
     transition: transform .3s;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);
@@ -31,37 +31,48 @@
   }
 
   &__img {
-    width: 70%;
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 50vh;
   }
 
   &__title {
     font-size: 2.2rem;
-    white-space: nowrap;
   }
 
   &__text {
     font-size: 1.5rem;
     padding: 1rem 3rem;
   }
-
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .services {
-    &__flex-box {
+    &__grid-box {
       grid-template-columns: 1fr;
-      padding: 8rem 7rem;
+      width: 60%;
     }
 
     &__img {
-      width: 70%;
+      height: auto;
     }
 
     &__box {
       align-items: center;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 1.2rem;
+      width: 100%;
+    }
+
+    &__title {
+      white-space: nowrap;
     }
   }
 }
+
+
+// @media (max-width: 768px) {
+//   grid-template-columns: repeat(2, 1fr);
+// }

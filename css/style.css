@@ -134,45 +134,50 @@ body {
 .services {
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
   transform: skewY(-4deg);
-  margin-bottom: 6.5rem; }
+  margin-bottom: 6.5rem;
+  display: flex;
+  justify-content: center; }
   .services > * {
     transform: skewY(4deg); }
-  .services__flex-box {
+  .services__grid-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 5rem;
-    padding: 12rem 15rem; }
+    gap: 5rem 10rem;
+    padding: 12rem 0;
+    width: 80%; }
   .services__box {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: .5rem;
     transition: transform .3s;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center; }
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .services__box:hover {
       transform: translateY(-1.5rem) scale(1.03); }
   .services__img {
-    width: 70%; }
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 50vh; }
   .services__title {
-    font-size: 2.2rem;
-    white-space: nowrap; }
+    font-size: 2.2rem; }
   .services__text {
     font-size: 1.5rem;
     padding: 1rem 3rem; }
 
-@media only screen and (max-width: 850px) {
-  .services__flex-box {
+@media only screen and (max-width: 1000px) {
+  .services__grid-box {
     grid-template-columns: 1fr;
-    padding: 8rem 7rem; }
+    width: 60%; }
   .services__img {
-    width: 70%; }
+    height: auto; }
   .services__box {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 12px; } }
+    gap: 1.2rem;
+    width: 100%; }
+  .services__title {
+    white-space: nowrap; } }
 
 .header {
   height: 7rem;
@@ -242,7 +247,7 @@ body {
     width: auto;
     height: 2.1rem; }
   .footer__copyright {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-bottom: -5rem; }
 
 @media only screen and (max-width: 850px) {
@@ -256,7 +261,8 @@ body {
 
 .about {
   padding: 16rem 0 13rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  margin-bottom: 10vh; }
   .about__title {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -280,15 +286,17 @@ body {
     margin-left: 13rem; }
 
 @media only screen and (max-width: 850px) {
-  .about__title {
-    font-size: 2.3rem; }
-  .about__content {
-    display: flex;
-    flex-direction: column-reverse; }
-  .about__text {
-    margin: 0;
-    font-size: 1.6rem;
-    padding: 0 20px; }
-  .about__imgs {
-    margin: 0;
-    text-align: center; } }
+  .about {
+    margin-bottom: 0; }
+    .about__title {
+      font-size: 2.3rem; }
+    .about__content {
+      display: flex;
+      flex-direction: column-reverse; }
+    .about__text {
+      margin: 0;
+      font-size: 1.6rem;
+      padding: 0 2rem; }
+    .about__imgs {
+      margin: 5rem 0 7rem 0;
+      text-align: center; } }
