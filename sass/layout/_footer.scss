@@ -1,62 +1,23 @@
 .footer {
-  height: 9rem;
+  height: 10rem;
   padding: 1rem 5.5rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
+  position: sticky;
+  @include flex-center;
+  flex-direction: column;
   background-color: $color-primary-light-footer;
-  justify-content: space-between;
 
   &__signin-logo {
-    width: 15%;
+    width: 12%;
   }
-
-  &__connect {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  &__link {
-    height: 2.5rem;
-    text-decoration: none;
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-  }
-
-  &__icon {
-    max-width: 100%;
-    width: auto;
-    height: 2.1rem;
-  }
-
-  // &__text {
-  //   font-weight: 600;
-  //   color: #000;
-  //   white-space: nowrap;
-  // }
 
   &__copyright {
     font-size: 1.2rem;
-    margin-bottom: -5rem;
   }
-
-  // .tel {
-  //   margin-bottom: 5px;
-  // }
 
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
   .footer {
-    height: 13rem;
-    flex-direction: column;
-
-    &__copyright {
-      margin-bottom: 0;
-    }
-
     &__signin-logo {
       width: 30%;
     }

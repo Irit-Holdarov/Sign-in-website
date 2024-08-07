@@ -2,7 +2,7 @@
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
 
   transform: skewY(-4deg);
-  margin-bottom: 6.5rem;
+  // margin-bottom: 6.5rem;
   display: flex;
   justify-content: center;
 
@@ -47,7 +47,7 @@
 
   &__box {
     background-color: rgba($color-white, .7);
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -59,8 +59,8 @@
 
   &__img {
     width: 100%;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     height: 50vh;
   }
 
@@ -77,7 +77,8 @@
 @media only screen and (max-width: 1000px) {
   .services {
     &__grid-box {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       width: 60%;
     }
 
@@ -86,8 +87,7 @@
     }
 
     &__box {
-      align-items: center;
-      display: flex;
+      @include flex-center;
       flex-direction: column;
       gap: 1.2rem;
       width: 100%;
@@ -98,8 +98,3 @@
     }
   }
 }
-
-
-// @media (max-width: 768px) {
-//   grid-template-columns: repeat(2, 1fr);
-// }

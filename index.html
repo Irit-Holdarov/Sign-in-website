@@ -7,7 +7,7 @@
   <title>Sign-in</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/jpeg" href="img/signin-logo/round-signin-icon.jpeg">
-  <script type="module" src="./js/main.js"></script>
+  <!-- <script type="module" src="./js/main.js"></script> -->
 </head>
 
 <body>
@@ -22,13 +22,12 @@
       <ul class="nav__list">
         <li class="btn nav__item"><a href="#about">אודות</a></li>
         <li class="btn nav__item"><a href="#services">השירותים שלנו</a></li>
-        <li class="btn nav__item"><a href="#recommendations">אומרים עלינו</a></li>
         <li class="btn nav__item"><a href="#contact">צור קשר</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="gallery">
+  <section class="gallery u-center-text">
     <div class="gallery__content">
       <img src="./img/signin-logo/signin-logo-clear.png" alt="logo" class="gallery__logo" />
 
@@ -51,7 +50,7 @@
 
       <div class="about__content">
 
-        <div class="about__imgs">
+        <div class="about__imgs u-center-text">
 
           <div class="composition">
             <img src="img/img-about/img-about1.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1" />
@@ -126,49 +125,87 @@
 
     </section>
 
+    <section class="contact" id="contact">
+      <div class="contact__title">
+        בואו נכיר
+      </div>
+      <div class="contact__social">
+        <a href="tel:052-8253173" class="contact__link tel">
+          <img src="img/img-icons/phone-icon-black.png" alt="phone-icon" class="contact__icon">
+          <span class="contact__text">052-8253173</span>
+        </a>
+        <a href="mailto:Signinmok@gmail.com" class="contact__link">
+          <img src="img/img-icons/email-icon.png" alt="email-icon" class="contact__icon">
+          <span class="contact__text">Signinmok@gmail.com</span>
+        </a>
+      </div>
+
+
+      <div class="contact__connect">
+        <a href="https://www.facebook.com/profile.php?id=61561233028926" target="_blank" class="contact__link">
+          <img src="img/img-icons/facebook-logo.png" alt="facebook-logo" class="contact__icon">
+        </a>
+        <a href="https://www.instagram.com/sign__in_?igsh=eG9laDd2Z3puejV5&utm_source=qr" target="_blank"
+          class="contact__link">
+          <img src="img/img-icons/instegram-logo.png" alt="instegram-logo" class="contact__icon">
+        </a>
+        <a href="https://wa.me/+972528253173" target="_blank" class="contact__link">
+          <img src="img/img-icons/whatsapp-logo.png" alt="whatsapp-logo" class="contact__icon">
+        </a>
+      </div>
+    </section>
+
   </main>
 
-
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore deleniti adipisci eum quae quos ex hic
-    eos fuga consequuntur earum numquam repudiandae, doloribus praesentium nihil officiis animi ea. Mollitia!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis deserunt amet nam, laborum delectus
-    temporibus facere labore dolorum inventore dolore tempora possimus optio pariatur quis quia eius tempore error?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit fugiat numquam doloribus autem vitae tempora
-    dolor nesciunt, provident nisi incidunt voluptatibus natus enim laudantium voluptate, repudiandae ut laboriosam?
-    Asperiores.
-  </div>
   <footer class="footer">
-
-    <!-- <div class="footer__contact">
-      <a href="tel:052-8253173" class="footer__link tel">
-        <img src="img/img-icons/phone-icon-black.png" alt="phone-icon" class="footer__icon">
-        <span class="footer__text">052-8253173</span>
-      </a>
-      <a href="mailto:Signinmok@gmail.com" class="footer__link">
-        <img src="img/img-icons/email-icon.png" alt="email-icon" class="footer__icon">
-        <span class="footer__text">Signinmok@gmail.com</span>
-      </a>
-    </div> -->
-
-    <div class="footer__connect">
-      <a href="https://www.facebook.com/profile.php?id=61561233028926" target="_blank" class="footer__link">
-        <img src="img/img-icons/facebook-logo.png" alt="facebook-logo" class="footer__icon">
-      </a>
-      <a href="https://www.instagram.com/sign__in_?igsh=eG9laDd2Z3puejV5&utm_source=qr" target="_blank"
-        class="footer__link">
-        <img src="img/img-icons/instegram-logo.png" alt="instegram-logo" class="footer__icon">
-      </a>
-      <a href="https://wa.me/+972528253173" target="_blank" class="footer__link">
-        <img src="img/img-icons/whatsapp-logo.png" alt="whatsapp-logo" class="footer__icon">
-      </a>
-    </div>
 
     <img src="img/signin-logo/signin-logo-clear.png" alt="signin-logo" class="footer__signin-logo">
 
     <div class="footer__copyright">&copy; 2020 SignIn. All rights reserved.</div>
 
   </footer>
+
+  <!-- <div class="popup" dir="rtl">
+    <div class="popup__content">
+
+      <div class="popup__right">
+        <h1 class="popup__title">ניהול ותפעול אירועים</h1>
+        <p class="popup__text">בניהול אירועים, כל פרט קטן חשוב, ואנחנו כאן כדי לוודא שהכל יתנהל בצורה חלקה ומקצועית. אנו
+          מתמחים במתן שירותי
+          תפעול ועוזרי הפקה לאירועים, ומתחייבים לספק מענה מלא ואיכותי לכל צורך של הפקת האירוע שלכם.</p>
+        <h3 class="popup__subtitle">מה אנחנו מציעים?</h3>
+        <p class="popup__text">
+          <b>• צוותי תפעול מקצועיים: </b> העובדים שלנו מיומנים ומנוסים בכל ההיבטים של תפעול האירוע. הם יודעים להתמודד עם
+          כל מצב
+          בלתי צפוי ולפתור בעיות בזמן אמת.<br>
+
+          • עוזרי הפקה: צוותי ההפקה שלנו ילוו אתכם משלב התכנון ועד לסיום האירוע, וידאגו שכל הפרטים יבוצעו בדיוק כפי
+          שתכננתם.<br>
+
+          • ניהול לוגיסטי: כולל תיאום ספקים, ניהול הקמה ופירוק, ופתרון כל בעיה שצצה בזמן האירוע.<br>
+
+          • ניהול מתחמים: אנו מתמחים בניהול והפעלת מתחמי אירועים מכל הסוגים, כולל מתחמי תצוגה, אולמות כנסים, אזורי
+          קייטרינג ועוד. אנחנו נוודא שכל מתחם יפעל בצורה מיטבית ותואמת לצרכי האירוע.<br>
+        </p>
+        <h3 class="popup__subtitle">למה לבחור בנו?</h3>
+        <p class="popup__text">• ניסיון ומקצועיות: עם ניסיון רב בניהול ותפעול אירועים בכל קנה מידה, אנחנו מבטיחים לכם
+          שירות מקצועי, אמין
+          ויעיל.<br>
+
+          • שקט נפשי: בעזרת צוות העובדים המנוסה שלנו, תוכלו להיות בטוחים שהאירוע שלכם נמצא בידיים טובות ושכל פרט יתנהל
+          בדיוק לפי התוכנית.<br>
+
+          • תמיכה מלאה: אנחנו נלווה אתכם לאורך כל תהליך ההפקה והתפעול, ונהיה זמינים לכל שאלה או בקשה שלכם.<br></p>
+        <p>אנו מזמינים אתכם להצטרף למאות לקוחות מרוצים שכבר נהנו משירותינו, ולהפוך את האירוע הבא שלכם להצלחה מסחררת.<br>
+        </p>
+      </div>
+
+      <div class="popup__left">
+        <img src="img/signin-21.jpeg" alt="signin1" class="popup__img">
+        <img src="img/signin-22.jpeg" alt="signin2" class="popup__img">
+      </div>
+    </div>
+  </div> -->
 
 
 </body>

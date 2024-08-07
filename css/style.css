@@ -48,6 +48,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.flex {
+  display: flex; }
+
+.grid {
+  display: grid; }
+
 .btn:hover {
   transform: translateY(-0.3rem); }
 
@@ -57,7 +63,6 @@ body {
 .gallery {
   display: flex;
   align-items: center;
-  text-align: center;
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main/img-main4.jpeg);
   background-size: cover;
@@ -105,7 +110,8 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute;
     z-index: 10;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border-radius: 1.5rem; }
     .composition__photo--p1 {
       left: 10%;
       top: 0; }
@@ -134,7 +140,6 @@ body {
 .services {
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
   transform: skewY(-4deg);
-  margin-bottom: 6.5rem;
   display: flex;
   justify-content: center; }
   .services > * {
@@ -161,7 +166,7 @@ body {
     align-items: stretch; }
   .services__box {
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -169,8 +174,8 @@ body {
       transform: translateY(-1.5rem) scale(1.03); }
   .services__img {
     width: 100%;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     height: 50vh; }
   .services__title {
     font-size: 2.2rem; }
@@ -180,13 +185,14 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .services__grid-box {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     width: 60%; }
   .services__img {
     height: auto; }
   .services__box {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 1.2rem;
     width: 100%; }
@@ -237,41 +243,53 @@ body {
       display: none; } }
 
 .footer {
-  height: 9rem;
+  height: 10rem;
   padding: 1rem 5.5rem;
+  position: sticky;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  background-color: #e2e2e2;
-  justify-content: space-between; }
+  flex-direction: column;
+  background-color: #e2e2e2; }
   .footer__signin-logo {
-    width: 15%; }
-  .footer__connect {
+    width: 12%; }
+  .footer__copyright {
+    font-size: 1.2rem; }
+
+@media only screen and (max-width: 550px) {
+  .footer__signin-logo {
+    width: 30%; } }
+
+.contact {
+  padding: 3rem 5.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4.5rem;
+  font-size: 17px; }
+  .contact__connect {
     display: flex;
     align-items: center;
     gap: 1.5rem; }
-  .footer__link {
+  .contact__link {
     height: 2.5rem;
     text-decoration: none;
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 1rem; }
-  .footer__icon {
+  .contact__icon {
     max-width: 100%;
     width: auto;
-    height: 2.1rem; }
-  .footer__copyright {
-    font-size: 1.2rem;
-    margin-bottom: -5rem; }
-
-@media only screen and (max-width: 850px) {
-  .footer {
-    height: 13rem;
-    flex-direction: column; }
-    .footer__copyright {
-      margin-bottom: 0; }
-    .footer__signin-logo {
-      width: 30%; } }
+    height: 3.1rem; }
+  .contact__text {
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap; }
+  .contact .tel {
+    margin-bottom: 15px;
+    margin-left: 32px; }
+  .contact__title {
+    font-weight: 700;
+    font-size: 3.5rem; }
 
 .about {
   padding: 16rem 0 13rem 0;
@@ -312,5 +330,4 @@ body {
       font-size: 1.6rem;
       padding: 0 2rem; }
     .about__imgs {
-      margin: 5rem 0 7rem 0;
-      text-align: center; } }
+      margin: 5rem 0 7rem 0; } }
