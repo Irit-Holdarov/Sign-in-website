@@ -14,7 +14,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem 0;
     padding: 12rem 0;
-    width: 80%;
+    width: 85%;
 
     &--col:nth-child(1) {
       grid-column: 1/4;
@@ -59,7 +59,7 @@
     width: 100%;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
-    height: 50vh;
+    height: 40vh;
   }
 
   &__title {
@@ -68,7 +68,7 @@
 
   &__text {
     font-size: 1.5rem;
-    padding: 1rem 3rem;
+    padding: 0.5rem 1rem;
   }
 }
 
