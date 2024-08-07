@@ -2,7 +2,7 @@
   position: relative;
 
   &__photo {
-    width: 35%;
+    width: 40%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
     z-index: 10;
@@ -16,7 +16,7 @@
 
 
     &--p2 {
-      right: 25%;
+      right: 15%;
       top: 3rem;
     }
 
@@ -39,7 +39,7 @@
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
   .composition {
     margin-bottom: 30rem;
 
@@ -50,6 +50,19 @@
 
     &__photo--p2 {
       right: 11%;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {
+  .composition {
+
+    &__photo {
+      width: 30%;
+
+      &--p2 {
+        right: 33%;
+      }
     }
   }
 }
