@@ -7,6 +7,7 @@
   white-space: nowrap;
   background: linear-gradient(to right, $color-gray-dark-header, $color-gray-light-header);
 
+
   &__info {
     @include flex-center;
     gap: 4rem;
@@ -50,6 +51,7 @@
 @media only screen and (max-width: 850px) {
   .header {
     padding: 1rem 1.5rem;
+    height: 8rem;
 
     &__logo {
       height: 4.5rem;

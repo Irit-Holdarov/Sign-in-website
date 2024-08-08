@@ -1,9 +1,9 @@
 .footer {
-  height: 10rem;
+  height: 7.3rem;
   padding: 1rem 5.5rem;
   position: sticky;
   @include flex-center;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: $color-footer;
 
   &__signin-logo {
@@ -13,14 +13,24 @@
   &__copyright {
     font-size: 1.2rem;
     color: $color-white;
+    margin-bottom: -3.5rem;
   }
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 950px) {
   .footer {
+    height: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
     &__signin-logo {
-      width: 30%;
+      width: 20%;
+    }
+
+    &__copyright {
+      margin-bottom: 0;
     }
   }
 }

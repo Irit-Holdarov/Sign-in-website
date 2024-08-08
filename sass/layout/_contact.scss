@@ -1,9 +1,13 @@
 .contact {
-  padding: 3rem 5.5rem;
-  @include flex-center;
-  flex-direction: column;
-  gap: 4.5rem;
+  padding: 0 5.5rem 3rem;
   font-size: 17px;
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
 
   &__connect {
     @include flex-center;
@@ -11,7 +15,7 @@
   }
 
   &__link {
-    height: 2.5rem;
+    height: 2.1rem;
     text-decoration: none;
     @include flex-center;
     gap: 1rem;
@@ -20,23 +24,27 @@
   &__icon {
     max-width: 100%;
     width: auto;
-    height: 3.1rem;
+    height: 2.1rem;
   }
 
   &__text {
-    font-weight: 600;
-    color: #000;
+    color: $text-color;
     white-space: nowrap;
   }
 
   .tel {
+    margin-left: 1.8rem;
+  }
+
+  .email {
     margin-bottom: 15px;
-    margin-left: 32px;
   }
 
   &__title {
     font-weight: 700;
     font-size: 3.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
 
 }

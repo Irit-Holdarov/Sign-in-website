@@ -51,21 +51,24 @@
 
 // Tranding Section
 #tranding {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
 
   .tranding-slider {
-    height: 52rem;
-    padding: 2rem;
+    border-bottom: 3px solid #FFFFFF;
+    height: 47rem;
+    padding: 0 2rem;
     position: relative;
   }
 
   @media (max-width: 1440px) {
-    padding: 7rem 0 3rem 0;
+    padding: 7rem 0 0 0;
   }
 
   @media (max-width: 500px) {
+    padding: 7rem 0 0 0;
+
     .tranding-slider {
-      height: 45rem;
+      height: 40rem;
     }
   }
 }
@@ -108,43 +111,34 @@
 // Tranding Slider Control
 .tranding-slider-control {
   position: relative;
-  bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: -25rem;
 
   .swiper-button-next {
-    left: 58% !important;
-    transform: translateX(-58%) !important;
+    right: 0 !important;
 
-    @media (max-width: 990px) {
-      left: 70% !important;
-      transform: translateX(-70%) !important;
+    &:active {
+      transform: translateY(0.2rem);
     }
 
     @media (max-width: 450px) {
-      left: 80% !important;
-      transform: translateX(-80%) !important;
+      display: none;
     }
   }
 
   .swiper-button-prev {
-    left: 42%;
-    transform: translateX(-42%);
+    left: 0 !important;
 
-    @media (max-width: 990px) {
-      left: 30% !important;
-      transform: translateX(-30%) !important;
+    &:active {
+      transform: translateY(0.2rem);
     }
 
     @media (max-width: 450px) {
-      left: 20% !important;
-      transform: translateX(-20%) !important;
+      display: none;
     }
   }
 
   .slider-arrow {
-    background: $color-white;
+    background: rgba($color-white, 0.6);
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;

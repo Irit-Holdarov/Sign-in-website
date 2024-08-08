@@ -99,8 +99,8 @@ const images = [
   'img/signin-16.jpeg',
   'img/signin-17.jpeg',
   'img/signin-18.jpeg',
+  'img/signin-21.jpeg',
   'img/signin-19.jpeg',
-  'img/signin-21.jpeg'
 ]
 
 const swiperWrapper = document.getElementById('tranding-swiper-wrapper');

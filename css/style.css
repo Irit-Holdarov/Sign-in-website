@@ -34,7 +34,10 @@ body {
   font-weight: 400;
   line-height: 1.7;
   font-family: "Heebo", Sans-serif;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.75)), url(../../img/pexels-ian.jpg);
+  background-position: center;
+  background-size: cover; }
 
 .u-center-text {
   text-align: center; }
@@ -171,7 +174,8 @@ body {
     display: flex;
     align-items: stretch; }
   .services__box {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.79);
+    color: #fff;
     border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
@@ -179,10 +183,9 @@ body {
     .services__box:hover {
       transform: translateY(-1.5rem) scale(1.03); }
   .services__img {
-    width: 100%;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    height: 40vh; }
+    width: 90%;
+    height: 40vh;
+    padding-top: 10px; }
   .services__title {
     font-size: 2.2rem; }
   .services__text {
@@ -218,9 +221,9 @@ body {
   .services__grid-box {
     display: flex;
     flex-direction: column;
-    width: 60%; }
+    width: 63%; }
   .services__img {
-    height: auto; }
+    height: 35vh; }
   .services__box {
     display: flex;
     align-items: center;
@@ -266,17 +269,20 @@ body {
   padding: 2rem 0; }
 
 #tranding {
-  padding: 4rem 0; }
+  padding: 4rem 0 0; }
   #tranding .tranding-slider {
-    height: 52rem;
-    padding: 2rem;
+    border-bottom: 3px solid #FFFFFF;
+    height: 47rem;
+    padding: 0 2rem;
     position: relative; }
   @media (max-width: 1440px) {
     #tranding {
-      padding: 7rem 0 3rem 0; } }
+      padding: 7rem 0 0 0; } }
   @media (max-width: 500px) {
-    #tranding .tranding-slider {
-      height: 45rem; } }
+    #tranding {
+      padding: 7rem 0 0 0; }
+      #tranding .tranding-slider {
+        height: 40rem; } }
 
 .tranding-slide {
   width: 37rem;
@@ -304,34 +310,23 @@ body {
 
 .tranding-slider-control {
   position: relative;
-  bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  top: -25rem; }
   .tranding-slider-control .swiper-button-next {
-    left: 58% !important;
-    transform: translateX(-58%) !important; }
-    @media (max-width: 990px) {
-      .tranding-slider-control .swiper-button-next {
-        left: 70% !important;
-        transform: translateX(-70%) !important; } }
+    right: 0 !important; }
+    .tranding-slider-control .swiper-button-next:active {
+      transform: translateY(0.2rem); }
     @media (max-width: 450px) {
       .tranding-slider-control .swiper-button-next {
-        left: 80% !important;
-        transform: translateX(-80%) !important; } }
+        display: none; } }
   .tranding-slider-control .swiper-button-prev {
-    left: 42%;
-    transform: translateX(-42%); }
-    @media (max-width: 990px) {
-      .tranding-slider-control .swiper-button-prev {
-        left: 30% !important;
-        transform: translateX(-30%) !important; } }
+    left: 0 !important; }
+    .tranding-slider-control .swiper-button-prev:active {
+      transform: translateY(0.2rem); }
     @media (max-width: 450px) {
       .tranding-slider-control .swiper-button-prev {
-        left: 20% !important;
-        transform: translateX(-20%) !important; } }
+        display: none; } }
   .tranding-slider-control .slider-arrow {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -379,43 +374,53 @@ body {
 
 @media only screen and (max-width: 850px) {
   .header {
-    padding: 1rem 1.5rem; }
+    padding: 1rem 1.5rem;
+    height: 8rem; }
     .header__logo {
       height: 4.5rem; }
     .header .nav__list {
       display: none; } }
 
 .footer {
-  height: 10rem;
+  height: 7.3rem;
   padding: 1rem 5.5rem;
   position: sticky;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: #5d5d5d; }
   .footer__signin-logo {
     width: 12%; }
   .footer__copyright {
     font-size: 1.2rem;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: -3.5rem; }
 
-@media only screen and (max-width: 550px) {
-  .footer__signin-logo {
-    width: 30%; } }
+@media only screen and (max-width: 950px) {
+  .footer {
+    height: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; }
+    .footer__signin-logo {
+      width: 20%; }
+    .footer__copyright {
+      margin-bottom: 0; } }
 
 .contact {
-  padding: 3rem 5.5rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 4.5rem;
+  padding: 0 5.5rem 3rem;
   font-size: 17px; }
+  .contact__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem; }
   .contact__connect {
     display: flex;
     align-items: center;
     gap: 1.5rem; }
   .contact__link {
-    height: 2.5rem;
+    height: 2.1rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -423,20 +428,22 @@ body {
   .contact__icon {
     max-width: 100%;
     width: auto;
-    height: 3.1rem; }
+    height: 2.1rem; }
   .contact__text {
-    font-weight: 600;
-    color: #000;
+    color: #494949;
     white-space: nowrap; }
   .contact .tel {
-    margin-bottom: 15px;
-    margin-left: 32px; }
+    margin-left: 1.8rem; }
+  .contact .email {
+    margin-bottom: 15px; }
   .contact__title {
     font-weight: 700;
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px; }
 
 .about {
-  padding: 16rem 0 13rem 0;
+  padding: 16rem 0 8rem 0;
   margin-top: -20vh;
   margin-bottom: 10vh; }
   .about__title {
@@ -457,15 +464,17 @@ body {
     margin-right: 13rem;
     font-size: 1.6rem;
     font-family: sans-serif;
-    color: #494949; }
+    color: #000; }
   .about__imgs {
     margin-left: 13rem; }
 
 @media only screen and (max-width: 750px) {
   .about {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: -25vh; }
     .about__title {
-      font-size: 2.3rem; }
+      font-size: 2.6rem;
+      padding: 0 5px; }
     .about__content {
       display: flex;
       flex-direction: column-reverse; }
@@ -474,7 +483,7 @@ body {
       font-size: 1.6rem;
       padding: 0 2rem; }
     .about__imgs {
-      margin: 5rem 0 7rem 0; } }
+      margin: 5rem 0 0 0; } }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
   .about {

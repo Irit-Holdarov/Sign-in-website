@@ -44,7 +44,8 @@
   }
 
   &__box {
-    background-color: rgba($color-white, .7);
+    background-color: rgba($color-black, .79);
+    color: $color-white;
     border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
@@ -56,10 +57,9 @@
   }
 
   &__img {
-    width: 100%;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    width: 90%;
     height: 40vh;
+    padding-top: 10px;
   }
 
   &__title {
@@ -121,11 +121,11 @@
     &__grid-box {
       display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 63%;
     }
 
     &__img {
-      height: auto;
+      height: 35vh;
     }
 
     &__box {
