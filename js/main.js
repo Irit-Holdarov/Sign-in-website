@@ -79,8 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const images = [
-  'img/signin-1.jpeg',
   'img/signin-2.jpeg',
+  'img/signin-20.jpeg',
+  'img/img-about/img-about3.jpeg',
+  'img/signin-1.jpeg',
   'img/signin-3.jpeg',
   'img/signin-4.jpeg',
   'img/signin-5.jpeg',
@@ -98,17 +100,7 @@ const images = [
   'img/signin-17.jpeg',
   'img/signin-18.jpeg',
   'img/signin-19.jpeg',
-  'img/signin-20.jpeg',
-  'img/signin-21.jpeg',
-  'img/img-about/img-about1.jpeg',
-  'img/img-about/img-about2.jpeg',
-  'img/img-about/img-about3.jpeg',
-  'img/img-main/img-main1.jpeg',
-  'img/img-main/img-main2.jpeg',
-  'img/img-main/img-main3.jpeg',
-  'img/img-main/img-main4.jpeg',
-  'img/img-main/img-main5.jpeg',
-  'img/img-main/img-main6.jpeg',
+  'img/signin-21.jpeg'
 ]
 
 const swiperWrapper = document.getElementById('tranding-swiper-wrapper');

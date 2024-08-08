@@ -4,7 +4,7 @@
   position: sticky;
   @include flex-center;
   flex-direction: column;
-  background-color: $color-primary-light-footer;
+  background-color: $color-footer;
 
   &__signin-logo {
     width: 12%;
@@ -12,6 +12,7 @@
 
   &__copyright {
     font-size: 1.2rem;
+    color: $color-white;
   }
 
 }
