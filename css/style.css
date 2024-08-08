@@ -104,7 +104,16 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%); }
     .gallery__logo {
       max-width: 40%;
-      top: 35%; } }
+      top: 35%; }
+    .gallery__content {
+      gap: 2rem; }
+    .gallery__phone_details {
+      display: flex;
+      align-items: center; }
+      .gallery__phone_details .tel {
+        font-size: 1.5rem; }
+      .gallery__phone_details .phone-icon-white {
+        height: 1.7rem; } }
 
 .composition {
   position: relative; }

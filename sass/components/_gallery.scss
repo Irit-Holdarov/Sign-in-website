@@ -49,5 +49,23 @@
       max-width: 40%;
       top: 35%;
     }
+
+    &__content {
+      gap: 2rem
+    }
+
+
+    &__phone_details {
+      @include flex-center;
+
+
+      .tel {
+        font-size: 1.5rem;
+      }
+
+      .phone-icon-white {
+        height: 1.7rem;
+      }
+    }
   }
 }
