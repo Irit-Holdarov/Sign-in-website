@@ -20,6 +20,18 @@ html {
 body {
   box-sizing: border-box; }
 
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5; } }
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7; } }
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5; } }
+
 @media only screen and (max-width: 850px) {
   html {
     font-size: 55.5%; } }
@@ -37,6 +49,20 @@ body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.75)), url(../../img/pexels-ian.jpg);
   background-position: center;
   background-size: cover; }
+
+::-webkit-scrollbar {
+  width: 1.3rem; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224; }
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9; }
 
 .u-center-text {
   text-align: center; }
@@ -267,32 +293,6 @@ body {
     gap: 1.2rem; }
   .services__title {
     white-space: nowrap; } }
-
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5; } }
-
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7; } }
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5; } }
-
-::-webkit-scrollbar {
-  width: 1.3rem; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out; }
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224; }
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9; }
 
 .container {
   max-width: 124rem;

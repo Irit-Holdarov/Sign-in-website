@@ -15,6 +15,24 @@ body {
   box-sizing: border-box;
 }
 
+// Responsive Zoom Levels
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
 
 @media only screen and (max-width: 850px) {
   html {
