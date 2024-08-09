@@ -2,12 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    { src: 'img/img-main/img-main1.jpeg', position: '0 35%' },
+    { src: 'img/img-main/img-main1.jpeg', position: '0 33%' },
     { src: 'img/img-main/img-main2.jpeg', position: '0 35%' },
-    { src: 'img/img-main/img-main3.jpeg', position: '0 65%' },
+    { src: 'img/img-main/img-main3.jpeg', position: '0 57%' },
     { src: 'img/img-main/img-main4.jpeg', position: '0 100%' },
     { src: 'img/img-main/img-main5.jpeg', position: 'center' },
-    { src: 'img/img-main/img-main6.jpeg', position: 'center' }
+    { src: 'img/img-main/img-main6.jpeg', position: '0 44%' }
   ]
 
   let currentIndex = 0;
@@ -45,7 +45,7 @@ const servicesData = [
     text: "דיילות מנוסות ומקצועיות אשר יעניקו שירות יעיל ואדיב לאורחים שלך."
   },
   {
-    img: "img/signin-1.jpeg",
+    img: "img/img-service/service-img4.jpeg",
     alt: "signin4",
     title: "שמירת חפצים",
     text: "צוות מיומן לניהול ושמירת חפצים בצורה מקצועית ובטוחה."

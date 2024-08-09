@@ -2,7 +2,7 @@
   position: relative;
 
   &__photo {
-    width: 40%;
+    width: 45%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
     z-index: 10;
@@ -38,31 +38,55 @@
   }
 }
 
-
-@media only screen and (max-width: 750px) {
-  .composition {
-    margin-bottom: 30rem;
-
-    &__photo--p3 {
-      left: 33%;
-      top: 7rem;
-    }
-
-    &__photo--p2 {
-      right: 11%;
-    }
-  }
-}
-
 @media screen and (max-width: 1050px) and (min-width: 750px) {
   .composition {
+    padding-bottom: 40rem;
 
     &__photo {
       width: 30%;
 
+      &--p1 {
+        left: 21%;
+      }
+
       &--p2 {
-        right: 33%;
+        right: 25%;
+      }
+
+      &--p3 {
+        left: 32%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .composition {
+    padding-bottom: 40rem;
+
+    &__photo {
+      width: 35%;
+
+      &--p2 {
+        right: 11%;
+      }
+
+      &--p3 {
+        left: 33%;
+        top: 7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .composition {
+    padding-bottom: 31rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .composition {
+    padding-bottom: 25rem;
   }
 }
