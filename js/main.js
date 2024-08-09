@@ -92,14 +92,14 @@ const images = [
   'img/signin-9.jpeg',
   'img/signin-10.jpeg',
   'img/signin-11.jpeg',
+  'img/img-main/img-main6.jpeg',
   'img/signin-12.jpeg',
   'img/signin-13.jpeg',
   'img/signin-14.jpeg',
   'img/signin-15.jpeg',
   'img/signin-16.jpeg',
-  'img/signin-17.jpeg',
   'img/signin-18.jpeg',
-  'img/signin-21.jpeg',
+  'img/signin-17.jpeg',
   'img/signin-19.jpeg',
 ]
 

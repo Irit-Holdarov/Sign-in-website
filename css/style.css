@@ -65,10 +65,10 @@ body {
 .gallery {
   display: flex;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/img-main/img-main6.jpeg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
   background-position: 0 35%;
   transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
@@ -405,7 +405,7 @@ body {
       transition: box-shadow 0.3s ease, padding-bottom 0.1s ease;
       color: #DD795B; }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
   .header {
     padding: 1rem 1.5rem;
     height: 8rem; }

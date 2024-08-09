@@ -1,9 +1,9 @@
 .gallery {
   @include flex-center;
-  height: 80vh;
+  height: 70vh;
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/img-main/img-main6.jpeg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
   @include background-position(0 35%);
   transition: background-image 1s ease-in-out 0s;
   animation: moveInBottom 0.7s ease-out;
