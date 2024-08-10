@@ -233,7 +233,7 @@ body {
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .services__img {
-    width: 90%;
+    width: 85%;
     height: 40vh;
     padding-top: 10px; }
   .services__title {
@@ -477,8 +477,8 @@ body {
 
 .about {
   padding: 16rem 0 8rem 0;
-  margin-top: -30vh;
-  margin-bottom: 5vh; }
+  margin-top: -25vh;
+  margin-bottom: 20vh; }
   .about__title {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -511,7 +511,7 @@ body {
     .about__text {
       margin: 0;
       font-size: 1.6rem;
-      padding: 0 2rem; } }
+      padding: 0 6rem; } }
 
 @media only screen and (max-width: 750px) {
   .about {
@@ -526,6 +526,6 @@ body {
     .about__text {
       margin: 0;
       font-size: 1.6rem;
-      padding: 0 2rem; }
+      padding: 0 6rem; }
     .about__imgs {
       margin: 5rem 0 0 0; } }
