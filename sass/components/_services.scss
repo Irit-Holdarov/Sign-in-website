@@ -68,23 +68,42 @@
   }
 }
 
-@media screen and (max-width: 1350px) and (min-width: 1050px) {}
+@media screen and (max-width: 1440px) and (min-width: 1250px) {
 
-.services {
-  &__img {
-    height: 30vh;
+  .services {
+    &__img {
+      height: 30vh;
+    }
+
+    &__text {
+      font-size: 1.7rem;
+    }
   }
+}
 
-  &__text {
-    font-size: 1.7rem;
+@media screen and (max-width: 1250px) and (min-width: 1050px) {
+  .services {
+    &__box {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+  .services {
+    &__box {
+      width: 85%;
+    }
   }
 }
 
 
-@media screen and (max-width: 1050px) and (min-width: 700px) {
+
+@media screen and (max-width: 1250px) and (min-width: 900px) {
   .services {
     &__img {
-      width: 80%;
+      width: 77%;
+      height: 35vh;
     }
 
     &__grid-box {
@@ -123,58 +142,64 @@
       @include flex-center;
       flex-direction: column;
       gap: 1.2rem;
-      width: 75%;
+      width: 85%;
     }
 
     &__title {
       white-space: nowrap;
+      font-size: 2.3rem;
+    }
+
+    &__text {
+      font-size: 1.7rem;
     }
   }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) and (min-width: 700px) {
   .services {
     &__img {
-      width: 75%;
+      height: 45vh;
     }
 
+    &__text {
+      font-size: 2.3rem;
+    }
   }
 }
 
-@media screen and (max-width: 850px) and (min-width: 600px) {
+@media screen and (max-width: 700px) and (min-width: 600px) {
   .services {
     &__img {
-      height: 35vh;
+      height: 40vh;
     }
 
-  }
-}
-
-
-@media screen and (max-width: 700px) and (min-width: 500px) {
-  .services {
-
-    &__box {
-      width: 73%;
+    &__text {
+      font-size: 2rem;
     }
   }
 }
 
-
-@media screen and (max-width: 580px) and (min-width: 400px) {
+@media screen and (max-width: 600px) {
   .services {
     &__img {
-      width: 72%;
+      height: 32vh;
+    }
+
+    &__text {
+      font-size: 1.9rem;
     }
   }
 }
 
-@media only screen and (max-width: 700px) {
+
+
+@media only screen and (max-width: 900px) {
   .services {
     &__grid-box {
       display: flex;
       flex-direction: column;
-      width: 63%;
+      width: 50%;
 
       &--col {
         justify-content: center;
@@ -182,32 +207,34 @@
 
     }
 
-    &__img {
-      height: 35vh;
-    }
-
     &__box {
       @include flex-center;
       flex-direction: column;
       gap: 1.2rem;
-      // width: 100%;
     }
 
     &__title {
       white-space: nowrap;
+      font-size: 3rem;
     }
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 550px) {
+  .services {
+    &__title {
+      font-size: 2.5rem;
+      padding: 0 13px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
   .services {
 
     &__img {
-      height: 35vh;
-    }
-
-    &__title {
-      padding: 0 13px;
+      height: 25vh;
     }
 
   }

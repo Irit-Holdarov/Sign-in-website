@@ -16,10 +16,11 @@
     flex-direction: column;
     gap: 4rem;
     margin-bottom: 10rem;
+    margin-top: 8rem;
   }
 
   &__logo {
-    max-width: 25%;
+    max-width: 20%;
     border-bottom: .3rem solid $color-white;
     border-top: .3rem solid $color-white;
   }
