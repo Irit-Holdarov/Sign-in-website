@@ -13,7 +13,7 @@
 
 // Tranding Section
 #tranding {
-  padding: 4rem 0 0;
+  padding: 7rem 0 0 0;
 
   .tranding-slider {
     border-bottom: 3px solid #FFFFFF;
@@ -22,9 +22,10 @@
     position: relative;
   }
 
-  @media (max-width: 1440px) {
-    padding: 7rem 0 0 0;
-  }
+  // @media (max-width: 1440px) {
+  //   padding: 7rem 0 0 0;
+  // }
+
 
   @media (max-width: 500px) {
     padding: 7rem 0 0 0;

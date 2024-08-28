@@ -13,8 +13,8 @@
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem 0;
-    padding: 12rem 0;
-    width: 85%;
+    padding: 7rem 0;
+    width: 80%;
 
     &--col:nth-child(1) {
       grid-column: 1/4;
@@ -50,31 +50,43 @@
     transition: transform .3s;
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-
-    // &:hover {
-    //   transform: translateY(-1.5rem) scale(1.03);
-    // }
   }
 
   &__img {
-    width: 85%;
-    height: 40vh;
+    width: 77%;
+    height: 25vh;
     padding-top: 10px;
   }
 
   &__title {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   &__text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1.7rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1050px) {}
+
+.services {
+  &__img {
+    height: 30vh;
+  }
+
+  &__text {
+    font-size: 1.7rem;
   }
 }
 
 
 @media screen and (max-width: 1050px) and (min-width: 700px) {
   .services {
+    &__img {
+      width: 80%;
+    }
+
     &__grid-box {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -120,20 +132,39 @@
   }
 }
 
+@media screen and (max-width: 930px) {
+  .services {
+    &__img {
+      width: 75%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 600px) {
+  .services {
+    &__img {
+      height: 35vh;
+    }
+
+  }
+}
+
+
 @media screen and (max-width: 700px) and (min-width: 500px) {
   .services {
 
     &__box {
-      width: 66%;
+      width: 73%;
     }
   }
 }
 
 
-@media screen and (max-width: 500px) and (min-width: 400px) {
+@media screen and (max-width: 580px) and (min-width: 400px) {
   .services {
     &__img {
-      width: 65%;
+      width: 72%;
     }
   }
 }
@@ -151,7 +182,6 @@
 
     }
 
-
     &__img {
       height: 35vh;
     }
@@ -166,5 +196,19 @@
     &__title {
       white-space: nowrap;
     }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .services {
+
+    &__img {
+      height: 35vh;
+    }
+
+    &__title {
+      padding: 0 13px;
+    }
+
   }
 }
