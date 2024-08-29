@@ -1,5 +1,6 @@
 'use strict';
 
+//gallery
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
     { src: 'img/img-main/img-main1.jpeg', position: '0 33%' },
@@ -24,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   changeBackgroundImage()
 })
+//gallery
 
+
+//services
 const servicesData = [
   {
     img: "img/img-service/service-img1.jpeg",
@@ -56,14 +60,14 @@ const servicesData = [
     title: "דפי נחיתה",
     text: "פתרון מותאם אישית ליצירת דפי רישום ייחודיים לאירועים, עם עיצוב גמיש ופונקציונליות גבוהה תוך דגש על חווית משתמש מעולה."
   }
-];
+]
 
 document.addEventListener("DOMContentLoaded", () => {
-  const servicesContainer = document.querySelector(".services__grid-box");
+  const servicesContainer = document.querySelector(".services__grid-box")
 
   servicesData.forEach(service => {
-    const serviceCol = document.createElement("div");
-    serviceCol.classList.add("services__grid-box--col");
+    const serviceCol = document.createElement("div")
+    serviceCol.classList.add("services__grid-box--col")
 
     serviceCol.innerHTML = `
       <div class="services__box">
@@ -71,13 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <h3 class="services__title">${service.title}</h3>
         <p class="services__text">${service.text}</p>
       </div>
-    `;
+    `
 
     servicesContainer.appendChild(serviceCol);
-  });
-});
+  })
+})
+//services
 
 
+//swiper-slide
 const images = [
   'img/signin-2.jpeg',
   'img/signin-20.jpeg',
@@ -145,3 +151,5 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   },
 })
 // Tranding Product Slider-end
+
+//swiper-slide
