@@ -183,6 +183,7 @@
 
 @media screen and (max-width: 600px) {
   .services {
+
     &__img {
       height: 32vh;
     }
@@ -215,7 +216,6 @@
     }
 
     &__title {
-      white-space: nowrap;
       font-size: 3rem;
     }
   }
@@ -223,10 +223,17 @@
 
 @media only screen and (max-width: 550px) {
   .services {
+
     &__title {
       font-size: 2.5rem;
       padding: 0 13px;
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .services {
+    margin: 0 -60px;
   }
 }
 
@@ -235,7 +242,7 @@
   .services {
 
     &__img {
-      height: 25vh;
+      height: 28vh;
     }
 
   }

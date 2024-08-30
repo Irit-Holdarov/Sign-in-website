@@ -62,16 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search)
   const serviceId = urlParams.get("id")
 
-  const service = servicesData.find(s => s.id === serviceId)
+  // const service = servicesData.find(s => s.id === serviceId)
 
-  // if (service) {
-  //   document.getElementById("service-img").src = service.img
-  //   document.getElementById("service-img").alt = service.alt
-  //   document.getElementById("service-title").textContent = service.title
-  //   document.getElementById("service-text").textContent = service.text
-  // } else {
-  //   // Handle case where the service is not found
-  //   document.getElementById("service-title").textContent = "Service Not Found"
-  //   document.getElementById("service-text").textContent = "Sorry, we couldn't find the service you're looking for."
-  // }
 })

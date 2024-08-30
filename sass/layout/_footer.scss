@@ -1,5 +1,5 @@
 .footer {
-  height: 8.3rem;
+  height: 7.3rem;
   padding: 1rem 5.5rem;
   position: sticky;
   @include flex-center;
@@ -19,6 +19,20 @@
 
 }
 
+@media only screen and (max-width: 1450px) {
+  .footer {
+    height: 8.3rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    &__signin-logo {
+      width: 18%;
+    }
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .footer {
     height: 11rem;
@@ -28,6 +42,7 @@
 
     &__signin-logo {
       width: 17%;
+      margin-left: 0;
     }
 
     &__copyright {
