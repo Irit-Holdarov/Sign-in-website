@@ -235,7 +235,8 @@ body {
     border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    text-decoration: none; }
   .services__img {
     width: 77%;
     height: 25vh;
@@ -444,6 +445,11 @@ body {
       transition: box-shadow 0.3s ease, padding-bottom 0.1s ease;
       color: #DD795B; }
 
+@media only screen and (max-width: 1400px) {
+  .header {
+    height: 8rem;
+    font-size: 2rem; } }
+
 @media only screen and (max-width: 700px) {
   .header {
     padding: 1rem 1.5rem;
@@ -528,9 +534,9 @@ body {
     margin-bottom: 10px; }
 
 .about {
-  padding: 16rem 0 8rem 0;
-  margin-top: -25vh;
-  margin-bottom: 5vh; }
+  padding: 5rem 0 8rem 0;
+  margin-top: -5vh;
+  margin-bottom: 8rem; }
   .about__title {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -564,31 +570,25 @@ body {
     margin-bottom: 11vh; } }
 
 @media screen and (max-width: 1050px) and (min-width: 750px) {
-  .about {
-    margin-top: -25vh;
-    margin-bottom: 0; }
-    .about__content {
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 5rem; }
-    .about__text {
-      margin: 0;
-      font-size: 1.6rem;
-      padding: 0 10rem; } }
+  .about__content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem; }
+  .about__text {
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 0 10rem; } }
 
 @media only screen and (max-width: 750px) {
-  .about {
-    margin-bottom: 0;
-    margin-top: -20vh; }
-    .about__title {
-      font-size: 3rem;
-      padding: 0 5px; }
-    .about__content {
-      display: flex;
-      flex-direction: column-reverse; }
-    .about__text {
-      margin: 0;
-      font-size: 1.6rem;
-      padding: 0 6rem; }
-    .about__imgs {
-      margin: 5rem 0 0 0; } }
+  .about__title {
+    font-size: 3rem;
+    padding: 0 5px; }
+  .about__content {
+    display: flex;
+    flex-direction: column-reverse; }
+  .about__text {
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 0 6rem; }
+  .about__imgs {
+    margin: 5rem 0 0 0; } }
