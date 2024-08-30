@@ -1,4 +1,5 @@
-// servicesData.js
+'use strict'
+
 const servicesData = [
   {
     img: "img/img-service/service-img1.jpeg",
@@ -36,21 +37,41 @@ const servicesData = [
     id: "landing-pages"
   }
 ]
-// service.js
+
 document.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const serviceId = urlParams.get("id");
+  const servicesContainer = document.querySelector(".services__grid-box")
 
-  const service = servicesData.find(s => s.id === serviceId);
+  servicesData.forEach(service => {
+    const serviceCol = document.createElement("div")
+    serviceCol.classList.add("services__grid-box--col")
 
-  if (service) {
-    document.getElementById("service-img").src = service.img;
-    document.getElementById("service-img").alt = service.alt;
-    document.getElementById("service-title").textContent = service.title;
-    document.getElementById("service-text").textContent = service.text;
-  } else {
-    // Handle case where the service is not found
-    document.getElementById("service-title").textContent = "Service Not Found";
-    document.getElementById("service-text").textContent = "Sorry, we couldn't find the service you're looking for.";
-  }
-});
+    serviceCol.innerHTML = `
+    <a href="service.html?id=${service.id}" class="services__box">
+      <img src="${service.img}" alt="${service.alt}" class="services__img">
+      <h3 class="services__title">${service.title}</h3>
+      <p class="services__text">${service.text}</p>
+    </a>
+  `
+
+    servicesContainer.appendChild(serviceCol);
+  })
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search)
+  const serviceId = urlParams.get("id")
+
+  const service = servicesData.find(s => s.id === serviceId)
+
+  // if (service) {
+  //   document.getElementById("service-img").src = service.img
+  //   document.getElementById("service-img").alt = service.alt
+  //   document.getElementById("service-title").textContent = service.title
+  //   document.getElementById("service-text").textContent = service.text
+  // } else {
+  //   // Handle case where the service is not found
+  //   document.getElementById("service-title").textContent = "Service Not Found"
+  //   document.getElementById("service-text").textContent = "Sorry, we couldn't find the service you're looking for."
+  // }
+})
