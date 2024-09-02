@@ -39,16 +39,13 @@ body {
   html {
     font-size: 55.5%; } }
 
-@font-face {
-  font-family: 'Heebo';
-  src: url("../fonts/Heebo-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.body-index {
+body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.75)), url(../../img/pexels-ian.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal; }
 
 ::-webkit-scrollbar {
   width: 1.3rem; }
@@ -87,6 +84,83 @@ body {
 
 .btn:active {
   transform: translateY(-0.1rem); }
+
+.about {
+  padding: 5rem 0 5rem 0;
+  margin-top: -10vh; }
+  .about__title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: #000;
+    letter-spacing: .3rem;
+    transition: all .2s; }
+    .about__title:hover {
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; }
+  .about__text {
+    margin-right: 6rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #000; }
+  .about__imgs__photo {
+    width: 38%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+    height: 45%;
+    margin: 5px; }
+    .about__imgs__photo:hover {
+      transform: scale(1) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .about__imgs:hover .about__imgs__photo:not(:hover) {
+    transform: scale(0.95); }
+
+@media screen and (max-width: 1450px) and (min-width: 1050px) {
+  .about__text {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 1050px) {
+  .about {
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .about__imgs {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .about__imgs__photo {
+        width: 20%;
+        height: 30vh; }
+    .about__content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 5rem; }
+    .about__text {
+      margin: 0;
+      font-size: 1.6rem;
+      padding: 0 10rem; } }
+
+@media only screen and (max-width: 850px) {
+  .about__imgs__photo {
+    height: 25vh; }
+  .about__text {
+    padding: 0 5em; } }
+
+@media only screen and (max-width: 715px) {
+  .about__imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px; }
+    .about__imgs__photo {
+      width: 65%;
+      height: 25vh; }
+  .about__text {
+    padding: 0 2rem; } }
 
 .gallery {
   display: flex;
@@ -148,78 +222,19 @@ body {
       .gallery__phone_details .phone-icon-white {
         height: 1.7rem; } }
 
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 38%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: 10;
-    transition: all 0.2s;
-    border-radius: 1.5rem; }
-    .composition__photo--p1 {
-      left: 5%;
-      top: 0; }
-    .composition__photo--p2 {
-      right: 13%;
-      top: 3rem; }
-    .composition__photo--p3 {
-      left: 25%;
-      top: 8rem; }
-    .composition__photo:hover {
-      transform: scale(1.1) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
-
-@media screen and (max-width: 1050px) and (min-width: 750px) {
-  .composition {
-    padding-bottom: 40rem; }
-    .composition__photo {
-      width: 28%; }
-      .composition__photo--p1 {
-        left: 7%; }
-      .composition__photo--p2 {
-        right: 16%;
-        top: 0; }
-      .composition__photo--p3 {
-        left: 32%;
-        top: 4rem; } }
-
-@media only screen and (max-width: 750px) {
-  .composition {
-    padding-bottom: 40rem; }
-    .composition__photo {
-      width: 30%; }
-      .composition__photo--p2 {
-        right: 11%;
-        top: 0; }
-      .composition__photo--p3 {
-        left: 33%;
-        top: 5rem; } }
-
-@media only screen and (max-width: 550px) {
-  .composition {
-    padding-bottom: 31rem; } }
-
-@media only screen and (max-width: 400px) {
-  .composition {
-    padding-bottom: 25rem; } }
-
 .services {
   background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
-  transform: skewY(-4deg);
+  transform: skewY(-6deg);
   display: flex;
   justify-content: center; }
   .services > * {
-    transform: skewY(4deg); }
+    transform: skewY(6deg); }
   .services__grid-box {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem 0;
-    padding: 7rem 0;
+    padding: 9rem 0;
     width: 80%; }
     .services__grid-box--col:nth-child(1) {
       grid-column: 1/4; }
@@ -429,8 +444,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
-  white-space: nowrap;
-  background: linear-gradient(to right, #4b4946, #d4d1c9); }
+  white-space: nowrap; }
   .header__info {
     display: flex;
     align-items: center;
@@ -551,65 +565,9 @@ body {
   .contact__title {
     font-weight: 700;
     font-size: 3.5rem;
-    margin-top: 25px;
-    margin-bottom: 10px; }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #392d2d; }
 
-.about {
-  padding: 5rem 0 8rem 0;
-  margin-top: -5vh;
-  margin-bottom: 8rem; }
-  .about__title {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    color: #000;
-    letter-spacing: .3rem;
-    transition: all .2s; }
-    .about__title:hover {
-      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .about__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem; }
-  .about__text {
-    margin-right: 6rem;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    color: #000; }
-  .about__imgs {
-    margin-left: 6rem; }
-
-@media screen and (max-width: 1450px) and (min-width: 1050px) {
-  .about {
-    margin-bottom: 20vh; }
-    .about__text {
-      font-size: 1.6rem; } }
-
-@media screen and (max-width: 1300px) and (min-width: 1050px) {
-  .about {
-    margin-bottom: 11vh; } }
-
-@media screen and (max-width: 1050px) and (min-width: 750px) {
-  .about__content {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 5rem; }
-  .about__text {
-    margin: 0;
-    font-size: 1.6rem;
-    padding: 0 10rem; } }
-
-@media only screen and (max-width: 750px) {
-  .about__title {
-    font-size: 3rem;
-    padding: 0 5px; }
-  .about__content {
-    display: flex;
-    flex-direction: column-reverse; }
-  .about__text {
-    margin: 0;
-    font-size: 1.6rem;
-    padding: 0 6rem; }
-  .about__imgs {
-    margin: 5rem 0 0 0; } }
+.service {
+  margin: 3rem; }

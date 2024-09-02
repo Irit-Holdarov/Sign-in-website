@@ -1,11 +1,11 @@
 .services {
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
-  transform: skewY(-4deg);
+  transform: skewY(-6deg);
   display: flex;
   justify-content: center;
 
   &>* {
-    transform: skewY(4deg);
+    transform: skewY(6deg);
   }
 
   &__grid-box {
@@ -13,7 +13,7 @@
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem 0;
-    padding: 7rem 0;
+    padding: 9rem 0;
     width: 80%;
 
     &--col:nth-child(1) {
