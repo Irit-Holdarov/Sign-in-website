@@ -34,7 +34,6 @@
 
     &--col:nth-child(5) {
       grid-column: 7/10;
-
     }
   }
 
@@ -51,6 +50,14 @@
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     text-decoration: none;
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+
+    &:active {
+      transform: translateY(-0.15rem) scale(1.03);
+    }
   }
 
   &__img {
@@ -70,7 +77,6 @@
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1250px) {
-
   .services {
     &__img {
       height: 30vh;
@@ -206,7 +212,6 @@
       &--col {
         justify-content: center;
       }
-
     }
 
     &__box {
@@ -223,7 +228,6 @@
 
 @media only screen and (max-width: 550px) {
   .services {
-
     &__title {
       font-size: 2.5rem;
       padding: 0 13px;
@@ -240,10 +244,8 @@
 
 @media only screen and (max-width: 450px) {
   .services {
-
     &__img {
       height: 28vh;
     }
-
   }
 }
