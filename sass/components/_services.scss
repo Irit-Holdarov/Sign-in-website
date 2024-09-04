@@ -1,5 +1,5 @@
 .services {
-  background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
+  background-color: $color-white;
   transform: skewY(-6deg);
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@
   &__img {
     width: 77%;
     height: 25vh;
-    padding-top: 10px;
+    padding-top: 1rem;
   }
 
   &__title {
@@ -230,14 +230,14 @@
   .services {
     &__title {
       font-size: 2.5rem;
-      padding: 0 13px;
+      padding: 0 1.3rem;
     }
   }
 }
 
 @media only screen and (max-width: 500px) {
   .services {
-    margin: 0 -60px;
+    margin: 0 -6rem;
   }
 }
 

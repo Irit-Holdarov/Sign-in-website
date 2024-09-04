@@ -1,6 +1,6 @@
 .contact {
   padding: 0 5.5rem 3rem;
-  font-size: 17px;
+  font-size: 1.7rem;
 
   &__container {
     @include flex-center;
@@ -37,14 +37,14 @@
   }
 
   .email {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   &__title {
     font-weight: 700;
     font-size: 3.5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #392d2d;
   }
 

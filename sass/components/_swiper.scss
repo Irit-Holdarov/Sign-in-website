@@ -16,16 +16,11 @@
   padding: 7rem 0 0 0;
 
   .tranding-slider {
-    border-bottom: 3px solid #FFFFFF;
+    border-bottom: .3rem solid $color-white;
     height: 47rem;
     padding: 0 2rem;
     position: relative;
   }
-
-  // @media (max-width: 1440px) {
-  //   padding: 7rem 0 0 0;
-  // }
-
 
   @media (max-width: 500px) {
     padding: 7rem 0 0 0;

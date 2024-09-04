@@ -4,14 +4,15 @@
   width: 100%;
   z-index: 1000;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-
-  height: 5rem;
+  height: 6rem;
   padding: 1rem 5.5rem;
   @include flex-center;
   justify-content: space-between;
   font-size: 1rem;
   white-space: nowrap;
   background: linear-gradient(to right, $color-white, $color-white, $color-white, $color-gray-dark-header);
+  transition: height 0.35s, background-color 0.35s, font-size 0.35s;
+
 
   &__info {
     @include flex-center;
@@ -31,14 +32,14 @@
   .nav {
     &__list {
       display: flex;
-      gap: 6rem;
+      gap: 5rem;
       list-style: none;
       flex-direction: row-reverse;
     }
 
     &__item a {
       text-decoration: none;
-      font-weight: 600;
+      // font-weight: 600;
       color: $color-black;
 
       &:hover {

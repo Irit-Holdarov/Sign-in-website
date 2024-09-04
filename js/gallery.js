@@ -1,5 +1,14 @@
 'use strict'
 
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('header');
+  if (window.scrollY > 50) {
+    header.style.height = '4rem';
+  } else {
+    header.style.height = '6rem';
+  }
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
     { src: 'img/img-main/img-main1.jpeg', position: '0 33%' },

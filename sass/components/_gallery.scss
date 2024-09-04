@@ -1,6 +1,6 @@
 .gallery {
   @include flex-center;
-  height: 60vh;
+  height: 65vh;
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/img-main/img-main6.jpeg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
