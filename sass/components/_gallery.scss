@@ -6,8 +6,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
   @include background-position(0 35%);
   transition: background-image 1s ease-in-out 0s;
-  animation: moveInBottom 0.7s ease-out;
-  animation-fill-mode: backwards;
   justify-content: center;
   margin-bottom: 5rem;
 

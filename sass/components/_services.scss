@@ -1,11 +1,12 @@
 .services {
   background-color: $color-white;
-  transform: skewY(-6deg);
+  transform: skewY(-8deg);
   display: flex;
   justify-content: center;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 
   &>* {
-    transform: skewY(6deg);
+    transform: skewY(8deg);
   }
 
   &__grid-box {
@@ -43,7 +44,7 @@
   }
 
   &__box {
-    background-color: rgba($color-black, .79);
+    background-color: #615F5F;
     color: $color-white;
     border-radius: 1.5rem;
     transition: transform .3s;
