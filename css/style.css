@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -44,6 +45,9 @@ body {
   font-family: "Rubik Doodle Shadow", system-ui;
   font-weight: 400;
   font-style: normal; }
+
+.body_service {
+  background: #ffffff; }
 
 ::-webkit-scrollbar {
   width: 1.3rem; }
@@ -236,7 +240,7 @@ body {
         height: 1.7rem; } }
 
 .services {
-  background-color: #fff;
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.8), rgba(56, 56, 56, 0.5)), url(../../img/signin-logo/tablets.jpeg);
   transform: skewY(-8deg);
   display: flex;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -247,7 +251,8 @@ body {
   .services__heading-title {
     margin-top: 2rem;
     font-size: 2.8rem;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    color: #fff; }
   .services__grid-box {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -269,8 +274,8 @@ body {
     display: flex;
     align-items: stretch; }
   .services__box {
-    background-color: #fff;
-    color: #000;
+    background-color: #00000085;
+    color: #fff;
     border-radius: 1.5rem;
     transition: transform .3s;
     text-align: center;
@@ -283,7 +288,8 @@ body {
   .services__img {
     width: 77%;
     height: 25vh;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    border-radius: 50%; }
   .services__title {
     font-size: 1.9rem; }
   .services__text {
@@ -306,8 +312,8 @@ body {
 
 @media screen and (max-width: 1250px) and (min-width: 900px) {
   .services__img {
-    width: 77%;
-    height: 35vh; }
+    width: 68%;
+    height: 32vh; }
   .services__grid-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -592,4 +598,32 @@ body {
     padding: 2rem 0; }
 
 .service {
-  margin: 3rem; }
+  margin: 1.5rem 10rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .service-header__title {
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    font-weight: 400; }
+  .service-header__small-line {
+    max-width: 5rem;
+    margin: 1.5rem auto 0;
+    border: 0;
+    border-top: 2px solid #DD795B; }
+  .service-offerings__subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 7px;
+    font-weight: 200; }
+  .service-benefits__subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 7px;
+    font-weight: 200; }
+  .service-benefits__item::before {
+    padding-left: 0.3rem;
+    content: '✔';
+    color: #DD795B;
+    font-size: 1.2rem; }

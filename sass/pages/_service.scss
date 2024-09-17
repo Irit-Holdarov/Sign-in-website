@@ -1,9 +1,54 @@
 .service {
-  margin: 3rem;
+  margin: 1.5rem 10rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
-  &-detail {
-    &__title {}
 
-    &__text {}
+  &-header {
+    &__title {
+      font-size: 3rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    &__small-line {
+      max-width: 5rem;
+      margin: 1.5rem auto 0;
+      border: 0;
+      border-top: 2px solid $color-orange-red;
+    }
   }
+
+
+  &-offerings {
+    &__subtitle {
+      font-size: 2rem;
+      font-weight: 200;
+      margin-bottom: 7px;
+      font-weight: 200;
+    }
+
+  }
+
+
+  &-benefits {
+
+    &__subtitle {
+      font-size: 2rem;
+      font-weight: 200;
+      margin-bottom: 7px;
+      font-weight: 200;
+    }
+
+    &__item::before {
+      padding-left: 0.3rem;
+      content: '✔';
+      color: $color-orange-red;
+      font-size: 1.2rem;
+    }
+
+  }
+
 }
