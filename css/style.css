@@ -618,8 +618,6 @@ body {
     background: #f2ffff; }
   .service-text {
     margin: 3rem 11rem 2rem; }
-  .service-imgs {
-    height: 30vh; }
   .service-offerings {
     margin-bottom: 2rem; }
     .service-offerings__subtitle {
@@ -655,3 +653,6 @@ body {
       content: '✔';
       color: #DD795B;
       font-size: 1.2rem; }
+  .service-summary {
+    margin: 3rem 0;
+    font-size: 1.6rem; }
