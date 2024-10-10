@@ -606,10 +606,10 @@ body {
     border: 0;
     border-top: 2px solid #DD795B; }
   .service__large-line {
-    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
     border: 0;
-    border-top: 4px solid #e9e1e1; }
+    border-top: 2px solid #e9e1e161; }
   .service-header__title {
     font-size: 3rem;
     letter-spacing: 3px;
@@ -656,3 +656,31 @@ body {
   .service-summary {
     margin: 3rem 0;
     font-size: 1.6rem; }
+
+@media only screen and (max-width: 450px) {
+  .service-text {
+    font-size: 1.8rem;
+    margin: 0 0 5rem; }
+  .service-header__title {
+    padding: 2rem; }
+  .service-offerings__item {
+    width: auto; }
+  .service-offerings__content {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem; }
+  .service-offerings__title {
+    font-size: 2.6rem; }
+  .service-offerings__subtitle {
+    font-size: 4rem; }
+  .service-benefits__subtitle {
+    font-size: 4rem; }
+  .service-benefits__text {
+    margin: 3rem 0; }
+  .service-benefits__item {
+    font-size: 1.6rem; }
+  .service-benefits__item::before {
+    font-size: 2.2rem; }
+  .service-summary {
+    font-size: 2rem;
+    font-weight: 500; } }

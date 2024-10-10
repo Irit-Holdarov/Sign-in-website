@@ -10,10 +10,10 @@
   }
 
   &__large-line {
-    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
     border: 0;
-    border-top: 4px solid #e9e1e1;
+    border-top: 2px solid #e9e1e161;
   }
 
   &-header {
@@ -94,4 +94,66 @@
     font-size: 1.6rem;
   }
 
+}
+
+
+@media only screen and (max-width: 450px) {
+  .service {
+    &-text {
+      font-size: 1.8rem;
+      margin: 0 0 5rem;
+    }
+
+    &-header {
+      &__title {
+        padding: 2rem;
+      }
+    }
+
+
+    &-offerings {
+      &__item {
+        width: auto;
+      }
+
+      &__content {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+
+      &__title {
+        font-size: 2.6rem;
+      }
+
+      &__subtitle {
+        font-size: 4rem;
+      }
+
+    }
+
+    &-benefits {
+
+      &__subtitle {
+        font-size: 4rem;
+      }
+
+      &__text {
+        margin: 3rem 0;
+      }
+
+      &__item {
+        font-size: 1.6rem;
+      }
+
+      &__item::before {
+        font-size: 2.2rem;
+      }
+    }
+
+    &-summary {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
 }
