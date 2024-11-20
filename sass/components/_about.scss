@@ -1,29 +1,86 @@
 .about {
   margin-top: -15vh;
-  margin-bottom: 4vh;
+  margin-bottom: 7vh;
   @include flex-center;
   flex-direction: column;
+  font-family: "Fredoka", sans-serif;
 
   &__text {
-
     font-size: 3.3rem;
-    padding: 4rem 6rem;
+    padding: 4rem 6rem 2rem;
     text-align: center;
-    line-height: 2;
     overflow: hidden;
 
-    &-title {
-      font-size: 8rem;
-      font-weight: 200;
-    }
-
-    &-subtitle {
-      font-weight: 200;
-    }
-
+    &-title,
+    &-subtitle,
     &-highlight {
       font-weight: 200;
     }
+
+    &-title {
+      font-size: 6.3rem;
+    }
   }
 
+  &__button {
+    text-align: center;
+
+    &-trigger {
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      background-color: #dd795b9e;
+      border: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .about {
+    margin-top: -10vh;
+  }
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark background */
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  &-container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 40rem;
+    margin: auto;
+    position: relative;
+  }
+
+  &-header {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &-close-btn {
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+    line-height: 0;
+  }
+
+  &-close-btn:hover {
+    color: $color-orange-red;
+  }
 }

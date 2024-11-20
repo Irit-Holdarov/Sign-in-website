@@ -6,3 +6,10 @@
 @mixin background-position($position) {
   background-position: $position;
 }
+
+// @mixin colored-large-line($color) {
+//   width: 60%;
+//   margin: 0 auto;
+//   border: 0;
+//   border-top: 2px solid $color;
+// }

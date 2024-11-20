@@ -68,4 +68,3 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   },
 })
 // Tranding Product Slider-end
-
