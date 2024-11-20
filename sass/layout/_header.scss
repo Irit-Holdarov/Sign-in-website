@@ -10,7 +10,7 @@
   justify-content: space-between;
   font-size: 1rem;
   white-space: nowrap;
-  background: linear-gradient(to right, $color-white, $color-white, $color-white, $color-gray-dark-header);
+  background: linear-gradient(to right, $color-gray-dark-header, $color-gray-dark-header, $color-white, $color-white, $color-white);
   transition: height 0.35s, background-color 0.35s, font-size 0.35s;
 
 
@@ -61,7 +61,7 @@
 
   .header {
     position: static;
-    background: linear-gradient(to right, $color-white, $color-white, $color-white, $color-gray-dark-header, $color-gray-dark-header);
+    background: linear-gradient(to right, $color-gray-dark-header, $color-gray-dark-header, $color-white, $color-white, $color-white);
     padding: 1rem 1.5rem;
     height: 7rem;
 

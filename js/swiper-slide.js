@@ -3,7 +3,6 @@
 const images = [
   'img/signin-2.jpeg',
   'img/signin-20.jpeg',
-  'img/img-about/img-about3.jpeg',
   'img/signin-1.jpeg',
   'img/signin-3.jpeg',
   'img/signin-4.jpeg',
