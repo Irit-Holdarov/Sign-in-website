@@ -1,10 +1,11 @@
 .services {
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
-  transform: skewY(-8deg);
+  transform: skewY(-6deg);
   display: flex;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   &>* {
     transform: skewY(8deg);
@@ -238,6 +239,10 @@
 
 @media only screen and (max-width: 550px) {
   .services {
+    &__grid-box {
+      width: 65%;
+    }
+
     &__title {
       font-size: 2.5rem;
       padding: 0 1.3rem;
@@ -245,17 +250,19 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .services {
-    margin: 0 -6rem;
-  }
-}
-
-
 @media only screen and (max-width: 450px) {
   .services {
     &__img {
       height: 28vh;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  .services {
+    &__grid-box {
+      width: 75%;
     }
   }
 }
