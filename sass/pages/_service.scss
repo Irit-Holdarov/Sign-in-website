@@ -57,12 +57,9 @@
       padding-top: 3rem;
     }
 
-    &__item {
-      width: 50%;
-    }
-
     &__icon {
-      max-width: 35%;
+      width: 60px;
+      height: 60px;
       margin-bottom: 2rem;
       opacity: 0;
       transform: translateY(6rem);
@@ -129,15 +126,54 @@
         font-size: 2rem;
       }
     }
+
+    &-summary {
+      font-size: 2.2rem;
+    }
+
   }
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .service {
     &-text {
       font-size: 1.8rem;
       margin: 0 0 5rem;
+    }
+
+    &-offerings {
+      &__subtitle {
+        font-size: 3.5rem;
+      }
+
+      &__title {
+        font-size: 2rem;
+      }
+
+      &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 5rem;
+      }
+
+      &__icon {
+        width: 85px;
+        height: 85px;
+      }
+
+      &__text {
+        padding: 0 2rem;
+        font-size: 1.5rem;
+      }
+
+    }
+
+    &-benefits {
+      &__subtitle {
+        font-size: 3.5rem;
+      }
     }
   }
 }
@@ -173,13 +209,13 @@
       }
     }
 
-
     &-offerings {
       &__item {
         width: auto;
       }
 
       &__content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1.5rem;
@@ -189,22 +225,13 @@
         font-size: 2.6rem;
       }
 
-      &__subtitle {
-        font-size: 4rem;
-      }
-
       &__text {
-        padding: 0 6rem;
+        padding: 0 8rem;
       }
 
     }
 
     &-benefits {
-
-      &__subtitle {
-        font-size: 4rem;
-      }
-
       &__text {
         margin: 3rem 0;
       }
