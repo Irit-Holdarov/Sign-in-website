@@ -32,6 +32,14 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -340,7 +348,10 @@ body {
     width: 77%;
     height: 25vh;
     padding-top: 1rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    opacity: 0; }
+    .services__img.animate {
+      animation: fadeInScale 0.5s ease-out forwards; }
   .services__title {
     font-size: 1.9rem; }
   .services__text {

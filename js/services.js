@@ -38,6 +38,7 @@ const servicesData = [
   }
 ]
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const servicesContainer = document.querySelector(".services__grid-box")
 
@@ -52,7 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
       <p class="services__text">${service.text}</p>
     </a>
   `
-
-    servicesContainer.appendChild(serviceCol);
+    servicesContainer.appendChild(serviceCol)
   })
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target
+        img.classList.add('animate')
+        observer.unobserve(img)
+      }
+    })
+  }, {
+    threshold: 0.3
+  })
+
+  setTimeout(() => {
+    const images = document.querySelectorAll('.services__img')
+    images.forEach(img => observer.observe(img))
+  }, 100)
 })
