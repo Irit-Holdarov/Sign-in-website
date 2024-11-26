@@ -29,7 +29,7 @@
       font-size: 4rem;
       letter-spacing: 3px;
       font-weight: 200;
-      padding: 2rem 0 0;
+      padding: 4rem 0 0;
       font-family: "Fredoka", sans-serif;
       overflow: hidden;
     }
@@ -111,7 +111,7 @@
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .service {
     &-text {
       font-size: 1.8rem;

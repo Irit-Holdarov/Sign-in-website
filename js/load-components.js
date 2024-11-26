@@ -2,25 +2,40 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   function includeHTML() {
-    const elements = document.querySelectorAll('[data-include]')
+    return new Promise((resolve) => {
+      const elements = document.querySelectorAll('[data-include]')
+      let completedRequests = 0;
 
-    elements.forEach(function (element) {
-      const file = element.getAttribute('data-include')
+      if (elements.length === 0) {
+        resolve();
+        return;
+      }
 
-      fetch(file)
-        .then(response => response.text())
-        .then(data => {
-          element.innerHTML = data
-          if (file === 'header.html') {
-            updateNavigation();
-          }
-        })
-        .catch(error => {
-          console.error('Error loading file:', error)
-        })
-    })
+      elements.forEach(function (element) {
+        const file = element.getAttribute('data-include')
+
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            element.innerHTML = data
+            if (file === 'header.html') {
+              updateNavigation();
+            }
+            completedRequests++;
+            if (completedRequests === elements.length) {
+              resolve();
+            }
+          })
+          .catch(error => {
+            console.error('Error loading file:', error)
+            completedRequests++;
+            if (completedRequests === elements.length) {
+              resolve();
+            }
+          })
+      })
+    });
   }
-
 
   function updateNavigation() {
     const navList = document.getElementById('navList')
@@ -51,5 +66,41 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  includeHTML();
-})
+  function initializeMobileMenu() {
+    const hamburgerBtn = document.querySelector('.hamburger-menu');
+    const headerNavigate = document.querySelector('.header__navigate');
+
+    if (hamburgerBtn && headerNavigate) {
+      // טיפול בלחיצה על כפתור ההמבורגר
+      hamburgerBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        headerNavigate.classList.toggle('active');
+      });
+
+      // סגירת התפריט בלחיצה על קישור
+      const navLinks = headerNavigate.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburgerBtn.classList.remove('active');
+          headerNavigate.classList.remove('active');
+        });
+      });
+
+      // סגירת התפריט בלחיצה מחוץ לתפריט
+      document.addEventListener('click', function (event) {
+        const isClickInside = headerNavigate.contains(event.target) ||
+          hamburgerBtn.contains(event.target);
+
+        if (!isClickInside && headerNavigate.classList.contains('active')) {
+          hamburgerBtn.classList.remove('active');
+          headerNavigate.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  // הפעלת כל הפונקציות בסדר הנכון
+  includeHTML().then(() => {
+    initializeMobileMenu();
+  });
+});
