@@ -11,25 +11,7 @@
 </head>
 
 <body class="body_service">
-  <header class="header">
-
-    <div class="header__info">
-      <a href="index.html">
-        <img src="./img/signin-logo/signin-logo-clear.png" alt="signin-logo" class="header__logo" />
-      </a>
-    </div>
-
-    <nav class="header__navigate">
-      <ul class="nav__list">
-        <li class="btn nav__item"><a href="index.html">דף הבית</a></li>
-        <li class="btn nav__item"><a href="index.html#about">אודות</a></li>
-        <li class="btn nav__item"><a href="index.html#services">השירותים שלנו</a></li>
-        <li class="btn nav__item"><a href="index.html#tranding">גלריה</a></li>
-        <li class="btn nav__item"><a href="index.html#contact">צור קשר</a></li>
-      </ul>
-    </nav>
-
-  </header>
+  <header data-include="header.html"></header>
 
   <main class="main-content">
 
@@ -75,17 +57,13 @@
 
 
     </section>
-
-
   </main>
 
-  <footer class="footer">
-    <img src="img/signin-logo/signin-logo-clear.png" alt="signin-logo" class="footer__signin-logo">
-    <div class="footer__copyright">&copy; 2020 SignIn. All rights reserved.</div>
-  </footer>
+  <footer data-include="footer.html"></footer>
 
-  <script src="js/service.js"></script>
-  <script src="js/services.js"></script>
+  <script src="./js/load-components.js"></script>
+  <script src="./js/service.js"></script>
+  <script src="./js/services.js"></script>
 
 </body>
 

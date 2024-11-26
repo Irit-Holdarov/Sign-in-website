@@ -11,24 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
-
-    <div class="header__info">
-      <a href="#">
-        <img src="./img/signin-logo/signin-logo-clear.png" alt="signin-logo" class="header__logo" />
-      </a>
-    </div>
-
-    <nav class="header__navigate">
-      <ul class="nav__list">
-        <li class="btn nav__item"><a href="#about">אודות</a></li>
-        <li class="btn nav__item"><a href="#services">השירותים שלנו</a></li>
-        <li class="btn nav__item"><a href="#tranding">גלריה</a></li>
-        <li class="btn nav__item"><a href="#contact">צור קשר</a></li>
-      </ul>
-    </nav>
-
-  </header>
+  <header data-include="header.html"></header>
 
   <main class="main-content">
     <section class="gallery u-center-text">
@@ -139,14 +122,12 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <img src="img/signin-logo/signin-logo-clear.png" alt="signin-logo" class="footer__signin-logo">
-    <div class="footer__copyright">&copy; 2020 SignIn. All rights reserved.</div>
-  </footer>
+  <footer data-include="footer.html"></footer>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/load-components.js"></script>
   <script type="module" src="./js/about.js"></script>
   <script type="module" src="./js/gallery.js"></script>
   <script type="module" src="./js/services.js"></script>
