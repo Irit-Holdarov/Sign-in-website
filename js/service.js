@@ -216,5 +216,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update summary
     document.querySelector(".service-summary").textContent = selectedService.summary
+
+    // Intersection Observer for icons
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, {
+      threshold: 0.3
+    })
+
+    // Observe icons after a short delay
+    setTimeout(() => {
+      document.querySelectorAll('.service-offerings__icon').forEach(icon => observer.observe(icon))
+    }, 100)
   }
 })

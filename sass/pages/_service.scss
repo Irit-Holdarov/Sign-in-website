@@ -63,6 +63,12 @@
     &__icon {
       max-width: 35%;
       margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(6rem);
+
+      &.animate {
+        animation: moveInBottom 0.5s ease-out forwards;
+      }
     }
 
     &__title {

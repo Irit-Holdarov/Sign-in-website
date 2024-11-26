@@ -703,7 +703,11 @@ body {
       width: 50%; }
     .service-offerings__icon {
       max-width: 35%;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(6rem); }
+      .service-offerings__icon.animate {
+        animation: moveInBottom 0.5s ease-out forwards; }
     .service-offerings__title {
       font-weight: bold;
       color: #DD795B;
