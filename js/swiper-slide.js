@@ -1,6 +1,8 @@
 'use strict'
 
 const images = [
+  'img/swiper-photos/signin17.jpg',
+  'img/swiper-photos/signin19.jpg',
   'img/swiper-photos/signin1.jpg',
   'img/swiper-photos/signin7.jpg',
   'img/swiper-photos/signin15.jpg',
@@ -15,12 +17,10 @@ const images = [
   'img/swiper-photos/signin5.jpeg',
   'img/swiper-photos/signin11.jpg',
   'img/swiper-photos/signin12.jpg',
-  'img/swiper-photos/signin18.jpg',
-  'img/swiper-photos/signin17.jpg',
-  'img/swiper-photos/signin19.jpg',
   'img/swiper-photos/signin20.jpg',
   'img/swiper-photos/signin14.jpg',
   'img/swiper-photos/signin13.jpg',
+  'img/swiper-photos/signin18.jpg',
 ]
 
 const swiperWrapper = document.getElementById('tranding-swiper-wrapper');
