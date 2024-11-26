@@ -165,7 +165,7 @@
       @include flex-center;
       flex-direction: column;
       gap: 1.2rem;
-      width: 85%;
+      width: 80%;
     }
 
     &__title {
@@ -175,6 +175,30 @@
 
     &__text {
       font-size: 1.7rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .services {
+    &__grid-box {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &--col {
+        justify-content: center;
+      }
+    }
+
+    &__box {
+      @include flex-center;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    &__title {
+      font-size: 3rem;
     }
   }
 }
@@ -218,31 +242,6 @@
   }
 }
 
-
-
-@media only screen and (max-width: 900px) {
-  .services {
-    &__grid-box {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-
-      &--col {
-        justify-content: center;
-      }
-    }
-
-    &__box {
-      @include flex-center;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-
-    &__title {
-      font-size: 3rem;
-    }
-  }
-}
 
 @media only screen and (max-width: 550px) {
   .services {
