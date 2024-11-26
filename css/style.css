@@ -744,7 +744,8 @@ body {
     font-family: "Fredoka", sans-serif;
     overflow: hidden; }
   .service-text {
-    margin: 3rem 11rem 2rem; }
+    margin: 3rem 8rem 2rem;
+    font-size: 1.3rem; }
   .service-offerings {
     margin-bottom: 2rem; }
     .service-offerings__subtitle {
@@ -777,22 +778,43 @@ body {
       font-weight: 200;
       margin-bottom: 7px; }
     .service-benefits__text {
-      margin: 0 10rem; }
-    .service-benefits__item::before {
-      padding-left: 0.3rem;
-      content: '✔';
-      color: #DD795B;
-      font-size: 1.2rem; }
+      margin: 3rem 9rem 0;
+      font-size: 1.4rem; }
+    .service-benefits__item {
+      position: relative;
+      display: block;
+      text-indent: -1.8rem;
+      line-height: 1.6; }
+      .service-benefits__item::before {
+        content: '✔';
+        color: #DD795B;
+        font-size: 1.6rem;
+        margin-left: 0.3rem; }
   .service-summary {
     margin: 3rem 0;
     font-size: 1.6rem; }
 
-@media only screen and (max-width: 700px) {
-  .service-header__title {
-    padding: 4rem 0 0; }
+@media only screen and (max-width: 1000px) {
+  .service-benefits__text {
+    margin: 0 6rem;
+    font-size: 1.6rem; }
+  .service-benefits__item::before {
+    font-size: 2rem; } }
+
+@media only screen and (max-width: 900px) {
   .service-text {
     font-size: 1.8rem;
     margin: 0 0 5rem; } }
+
+@media only screen and (max-width: 800px) {
+  .service-benefits__text {
+    font-size: 1.8rem; }
+  .service-benefits__item::before {
+    font-size: 2.2rem; } }
+
+@media only screen and (max-width: 700px) {
+  .service-header__title {
+    padding: 4rem 0 0; } }
 
 @media only screen and (max-width: 650px) {
   .service-header__title {
@@ -807,6 +829,8 @@ body {
     font-size: 2.6rem; }
   .service-offerings__subtitle {
     font-size: 4rem; }
+  .service-offerings__text {
+    padding: 0 6rem; }
   .service-benefits__subtitle {
     font-size: 4rem; }
   .service-benefits__text {
@@ -818,3 +842,11 @@ body {
   .service-summary {
     font-size: 2rem;
     font-weight: 500; } }
+
+@media only screen and (max-width: 500px) {
+  .service-offerings__text {
+    padding: 0 4rem; } }
+
+@media only screen and (max-width: 430px) {
+  .service-offerings__text {
+    padding: 0; } }
