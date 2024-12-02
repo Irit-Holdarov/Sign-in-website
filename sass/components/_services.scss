@@ -72,7 +72,8 @@
 
   &__img {
     width: 77%;
-    height: 25vh;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     padding-top: 1rem;
     border-radius: 50%;
     opacity: 0;
@@ -94,10 +95,6 @@
 
 @media screen and (max-width: 1440px) and (min-width: 1250px) {
   .services {
-    &__img {
-      height: 30vh;
-    }
-
     &__text {
       font-size: 1.7rem;
     }
@@ -124,11 +121,6 @@
 
 @media screen and (max-width: 1250px) and (min-width: 900px) {
   .services {
-    &__img {
-      width: 65%;
-      height: 32vh;
-    }
-
     &__grid-box {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -205,11 +197,6 @@
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
   .services {
-    &__img {
-      height: 43vh;
-      width: 68%;
-    }
-
     &__text {
       font-size: 2.3rem;
     }
@@ -218,10 +205,6 @@
 
 @media screen and (max-width: 700px) and (min-width: 600px) {
   .services {
-    &__img {
-      height: 38vh;
-    }
-
     &__text {
       font-size: 2rem;
     }
@@ -230,12 +213,6 @@
 
 @media screen and (max-width: 600px) {
   .services {
-
-    &__img {
-      height: 32vh;
-      width: 65%;
-    }
-
     &__text {
       font-size: 1.9rem;
     }
@@ -252,23 +229,6 @@
     &__title {
       font-size: 2.5rem;
       padding: 0 1.3rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .services {
-    &__img {
-      height: 28vh;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 350px) {
-  .services {
-    &__grid-box {
-      width: 75%;
     }
   }
 }
