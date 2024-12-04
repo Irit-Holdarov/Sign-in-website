@@ -587,6 +587,27 @@ body {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg); }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+  .overlay.active {
+    display: block;
+    opacity: 1; }
+
+.hamburger-menu {
+  z-index: 1001; }
+
+.header__navigate.active {
+  z-index: 1000; }
+
 @media only screen and (max-width: 1439px) {
   .header {
     height: 7.5rem; }

@@ -116,16 +116,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Mobile menu initialization function
   function initializeMobileMenu() {
     const hamburgerBtn = document.querySelector('.hamburger-menu')
     const headerNavigate = document.querySelector('.header__navigate')
+    const overlay = document.querySelector('.overlay')
 
     if (hamburgerBtn && headerNavigate) {
       // Handle hamburger button click
       hamburgerBtn.addEventListener('click', function () {
         this.classList.toggle('active')
         headerNavigate.classList.toggle('active')
+        overlay.classList.toggle('active') // הוספנו
+        document.body.style.overflow = headerNavigate.classList.contains('active') ? 'hidden' : '' // מונע גלילה כשהתפריט פתוח
       })
 
       // Close menu when clicking a link
@@ -134,6 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', () => {
           hamburgerBtn.classList.remove('active')
           headerNavigate.classList.remove('active')
+          overlay.classList.remove('active') // הוספנו
+          document.body.style.overflow = '' // מחזיר את הגלילה
         })
       })
 
@@ -145,7 +149,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isClickInside && headerNavigate.classList.contains('active')) {
           hamburgerBtn.classList.remove('active')
           headerNavigate.classList.remove('active')
+          overlay.classList.remove('active') // הוספנו
+          document.body.style.overflow = '' // מחזיר את הגלילה
         }
+      })
+
+      // Close menu when clicking on overlay
+      overlay.addEventListener('click', function () {
+        hamburgerBtn.classList.remove('active')
+        headerNavigate.classList.remove('active')
+        overlay.classList.remove('active')
+        document.body.style.overflow = ''
       })
     }
   }
