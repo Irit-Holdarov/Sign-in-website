@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  // Function to update navigation based on current page
   function updateNavigation() {
     const navList = document.getElementById('navList')
     const isHomePage = window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')
+    const isServicePage = window.location.pathname.includes('service')
 
     if (navList) {
       const menuItems = isHomePage
@@ -61,29 +61,58 @@ document.addEventListener('DOMContentLoaded', function () {
 
       navList.innerHTML = menuItems
         .map(item => `
-         <li class="btn nav__item">
-           <a href="${item.href}" onclick="scrollToSection(event, '${item.href}')">${item.text}</a>
-         </li>
-       `).join('')
+          <li class="btn nav__item">
+            <a href="${item.href}" ${isServicePage ? 'onclick="handleServicePageLinks(event, this)"' : ''}>${item.text}</a>
+          </li>
+        `).join('')
+
+      // Add smooth scrolling for homepage
+      if (isHomePage) {
+        navList.addEventListener('click', function (event) {
+          const link = event.target.closest('a')
+          if (link && link.getAttribute('href').startsWith('#')) {
+            event.preventDefault()
+            const targetId = link.getAttribute('href').substring(1)
+            scrollToElement(targetId)
+          }
+        })
+      }
     }
   }
 
-  // Function to scroll to section with offset
-  window.scrollToSection = function (event, href) {
+  // Helper function for smooth scrolling
+  function scrollToElement(targetId) {
+    const targetElement = document.getElementById(targetId)
+    if (targetElement) {
+      const offset = 80
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
+
+  // Function to handle navigation from service pages
+  window.handleServicePageLinks = function (event, link) {
+    const href = link.getAttribute('href')
     if (href.includes('#')) {
       event.preventDefault()
-      const targetId = href.split('#')[1];
-      const targetElement = document.getElementById(targetId)
+      const targetId = href.split('#')[1]
+      localStorage.setItem('scrollToId', targetId)
+      window.location.href = 'index.html'
+    }
+  }
 
-      if (targetElement) {
-        const offset = 80
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        })
-      }
+  // Check for stored scroll target on page load
+  if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+    const scrollToId = localStorage.getItem('scrollToId')
+    if (scrollToId) {
+      localStorage.removeItem('scrollToId')
+      setTimeout(() => {
+        scrollToElement(scrollToId)
+      }, 100)
     }
   }
 
