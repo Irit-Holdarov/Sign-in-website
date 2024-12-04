@@ -209,6 +209,10 @@ body {
         transition: transform 0.5s ease; }
         .gallery__background .main-video video:hover {
           transform: scale(1.03); }
+        .gallery__background .main-video video::-webkit-media-controls {
+          display: none !important; }
+        .gallery__background .main-video video::-webkit-media-controls-start-playback-button {
+          display: none !important; }
     .gallery__background::after {
       content: '';
       position: absolute;
