@@ -7,6 +7,7 @@ const images = [
   'img/swiper-photos/signin1.jpg',
   'img/swiper-photos/signin7.jpg',
   'img/swiper-photos/signin15.jpg',
+  'img/swiper-photos/signin24.jpeg',
   'img/swiper-photos/signin16.jpg',
   'img/swiper-photos/signin3.jpg',
   'img/swiper-photos/signin4.jpg',

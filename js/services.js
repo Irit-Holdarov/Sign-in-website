@@ -16,7 +16,8 @@ const servicesData = [
     id: "registration-desk"
   },
   {
-    img: "img/img-service/service-img3.jpeg",
+    // img: "img/img-service/service-img3.jpeg",
+    img: "img/swiper-photos/signin6.jpeg",
     alt: "signin3",
     title: "שירותי דיילות לאירועים",
     text: "דיילות מנוסות ומקצועיות אשר יעניקו שירות יעיל ואדיב לאורחים שלך.",
