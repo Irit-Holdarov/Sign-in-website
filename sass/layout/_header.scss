@@ -108,6 +108,19 @@
   }
 }
 
+@media only screen and (max-width: 1439px) {
+  .header {
+    height: 7.5rem;
+
+    .nav {
+      &__list {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}
+
 @media only screen and (max-width: 700px) {
   .header {
     position: fixed;
@@ -149,7 +162,7 @@
       }
 
       &__item a {
-        font-size: 2rem; // הגדלנו את גודל הטקסט
+        font-size: 2rem;
       }
     }
   }

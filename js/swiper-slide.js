@@ -2,6 +2,7 @@
 
 const images = [
   'img/swiper-photos/signin17.jpg',
+  'img/swiper-photos/signin22.jpeg',
   'img/swiper-photos/signin19.jpg',
   'img/swiper-photos/signin1.jpg',
   'img/swiper-photos/signin7.jpg',
@@ -12,18 +13,20 @@ const images = [
   'img/swiper-photos/signin6.jpeg',
   'img/swiper-photos/signin8.jpg',
   'img/swiper-photos/signin9.jpg',
+  'img/swiper-photos/signin21.jpeg',
   'img/swiper-photos/signin2.jpg',
+  'img/swiper-photos/signin12.jpg',
   'img/swiper-photos/signin10.jpg',
   'img/swiper-photos/signin5.jpeg',
   'img/swiper-photos/signin11.jpg',
-  'img/swiper-photos/signin12.jpg',
   'img/swiper-photos/signin20.jpg',
   'img/swiper-photos/signin14.jpg',
-  'img/swiper-photos/signin13.jpg',
   'img/swiper-photos/signin18.jpg',
+  'img/swiper-photos/signin23.jpeg',
+  'img/swiper-photos/signin13.jpg',
 ]
 
-const swiperWrapper = document.getElementById('tranding-swiper-wrapper');
+const swiperWrapper = document.getElementById('tranding-swiper-wrapper')
 
 images.forEach(src => {
   const slide = document.createElement('div')

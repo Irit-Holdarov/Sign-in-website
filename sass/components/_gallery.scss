@@ -1,33 +1,84 @@
 .gallery {
-  @include flex-center;
+  position: relative;
   height: 65vh;
-  background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/img-main/img-main6.jpeg);
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-  @include background-position(0 35%);
-  transition: background-image 1s ease-in-out 0s;
-  justify-content: center;
+  overflow: hidden;
   margin-bottom: 5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .main-video {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+      pointer-events: none;
+    }
+  }
 
   &__content {
     @include flex-center;
     flex-direction: column;
-    gap: 4rem;
-    margin-bottom: 10rem;
     margin-top: 8rem;
-    animation: fadeInDown 1s ease-out forwards;
   }
 
   &__logo {
-    max-width: 20%;
-    border-bottom: .3rem solid $color-white;
-    border-top: .3rem solid $color-white;
+    max-width: 15%;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out forwards;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 3.3rem;
+    text-align: center;
+
+    &-subtitle {
+      margin-bottom: 1rem;
+      font-weight: 200;
+      opacity: 0;
+      animation: fadeInRight 1s ease-out 0.5s forwards;
+    }
+
+    &-highlight {
+      font-weight: 300;
+      opacity: 0;
+      animation: fadeInLeft 1s ease-out 1s forwards;
+    }
   }
 
 
   &__phone_details {
+    margin-top: 3rem;
     @include flex-center;
     gap: 0.7rem;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out 1.5s forwards;
 
     .tel {
       text-decoration: none;
@@ -58,26 +109,34 @@
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 
     &__logo {
-      max-width: 40%;
-      top: 35%;
+      max-width: 20%;
     }
-
-    &__content {
-      gap: 2rem
-    }
-
 
     &__phone_details {
       @include flex-center;
 
-
-      .tel {
-        font-size: 1.5rem;
-      }
-
       .phone-icon-white {
         height: 1.7rem;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .gallery {
+
+    &__logo {
+      max-width: 25%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+
+    &__logo {
+      max-width: 35%;
     }
   }
 }

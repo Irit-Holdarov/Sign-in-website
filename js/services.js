@@ -2,14 +2,14 @@
 
 const servicesData = [
   {
-    img: "img/img-service/service-img1.jpeg",
+    img: "img/img-service/service-img1.jpg",
     alt: "signin1",
     title: "ניהול ותפעול אירועים",
     text: "תכנון, ארגון וביצוע מקצועי של כל היבטי האירוע, כולל ניהול לוגיסטי, צוותים ומתחמים כדי להבטיח שהאירוע יתנהל בצורה מושלמת.",
     id: "event-management"
   },
   {
-    img: "img/img-service/service-img2.jpeg",
+    img: "img/swiper-photos/signin13.jpg",
     alt: "signin2",
     title: "עמדות רישום לאירועים",
     text: "פתרון קל, מהיר ומסודר לרישום המשתתפים, תוך דגש על מקצועיות ויעילות לחוויית כניסה מהירה ונוחה, עם טכנולוגיה מתקדמת שמבטיחה תהליך חלק ויעיל.",

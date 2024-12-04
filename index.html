@@ -14,50 +14,50 @@
   <header data-include="header.html"></header>
 
   <main class="main-content">
-    <section class="gallery u-center-text">
+    <section class="gallery" dir="rtl">
+      <div class="gallery__background">
+        <div class="main-video">
+          <video autoplay muted loop playsinline>
+            <source src="img/srikot.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
       <div class="gallery__content">
         <img src="./img/signin-logo/signin-logo-clear.png" alt="logo" class="gallery__logo" />
 
-        <div class="gallery__phone_details">
-          <img src="img/img-conect_icons/phone-icon-white.png" alt="phone-icon-white" class="phone-icon-white">
-          <a href="tel:052-8253173" class="tel">
-            052-8253173
-          </a>
+        <div class="gallery__text">
+          <h5 class="gallery__text-subtitle">הופכים כל אירוע</h5>
+          <h4 class="gallery__text-highlight">להצלחה מסחררת!</h4>
         </div>
+
+        <div class="gallery__phone_details">
+          <a href="tel:052-8253173" class="tel">052-8253173</a>
+          <img src="img/img-conect_icons/phone-icon-white.png" alt="phone-icon-white" class="phone-icon-white">
+        </div>
+
       </div>
+
     </section>
+
 
     <section class="about" id="about" dir="rtl">
-
-      <div class="about__text">
-        <h3 class="about__text-title">קצר ולעניין</h3>
-        <h5 class="about__text-subtitle">הופכים כל אירוע</h5>
-        <h4 class="about__text-highlight">להצלחה מסחררת!</h4>
+      <div class="about-container">
+        <h2 class="about-header">נעים להכיר</h2>
+        <p class="about-content">
+          SignIn מתמחה במתן פתרונות מותאמים אישית לכל סוגי האירועים, עם דגש על שירותי דיילות ותפעול אירועים ברמה
+          הגבוהה ביותר.<br> אנו מבטיחים לספק חוויית אירוע ללא תחרות בעזרת שירותים מקיפים הכוללים - ⁠<br>ניהול אירועים
+          ועובדי תפעול, ⁠עמדות רישום וכניסה לאירועים, ⁠שירותי שמירת חפצים, ⁠דפי נחיתה ועמודי רישום בתיאום אישי,
+          ⁠דיילות לאירועים ועוד.<br> אנו גאים בכך שכל המערכות שלנו פותחו על ידינו, מבלי להסתמך על ספקי משנה. הדבר מאפשר
+          לנו
+          להבטיח שירות איכותי ומהיר בכל שלבי התכנון והביצוע של האירוע, תוך התחייבות לשירות מצוין והשגת המטרות שלך.<br>
+          <br />
+          נשמח לעמוד לשירותך ולעזור לך ליצור את האירוע המושלם באמצעות מגוון שירותים מקיפים שיבטיחו לך חוויה בלתי
+          נשכחת.
+        </p>
       </div>
-
-      <div class="about__button btn">
-        <button class="about__button-trigger">קראו עלינו &#8592</button>
-      </div>
-
-      <div class="popup">
-        <div class="popup-container">
-          <span class="popup-close-btn">&times;</span>
-          <h2 class="popup-header">נעים להכיר</h2>
-          <p class="popup-content">
-            SignIn מתמחה במתן פתרונות מותאמים אישית לכל סוגי האירועים, עם דגש על שירותי דיילות ותפעול אירועים ברמה
-            הגבוהה ביותר.<br> אנו מבטיחים לספק חוויית אירוע ללא תחרות בעזרת שירותים מקיפים הכוללים - ⁠<br>ניהול אירועים
-            ועובדי תפעול, ⁠עמדות רישום וכניסה לאירועים, ⁠שירותי שמירת חפצים, ⁠דפי נחיתה ועמודי רישום בתיאום אישי,
-            ⁠דיילות
-            לאירועים ועוד.<br> אנו גאים בכך שכל המערכות שלנו פותחו על ידינו, מבלי להסתמך על ספקי משנה. הדבר מאפשר לנו
-            להבטיח שירות איכותי ומהיר בכל שלבי התכנון והביצוע של האירוע, תוך התחייבות לשירות מצוין והשגת המטרות שלך.<br>
-            <br />
-            נשמח לעמוד לשירותך ולעזור לך ליצור את האירוע המושלם באמצעות מגוון שירותים מקיפים שיבטיחו לך חוויה בלתי
-            נשכחת.
-          </p>
-        </div>
-      </div>
-
     </section>
+
 
     <section class="services" dir="rtl" id="services">
       <div class="container">
@@ -93,7 +93,7 @@
   <section class="contact" id="contact">
 
     <h1 class="u-center-text  contact__title" dir="rtl">
-      -- בואו נכיר --
+      -- דברו איתנו --
     </h1>
 
     <div class="contact__container">

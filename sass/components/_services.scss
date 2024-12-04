@@ -1,6 +1,6 @@
 .services {
   background-image: linear-gradient(to right bottom, $dark-grey, $light-grey), url(../../img/signin-logo/tablets.jpeg);
-  transform: skewY(-6deg);
+  transform: skewY(-5deg);
   display: flex;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   flex-direction: column;
@@ -8,14 +8,16 @@
   width: 100%;
 
   &>* {
-    transform: skewY(6deg);
+    transform: skewY(5deg);
   }
 
   &__heading-title {
     margin-top: 2rem;
-    font-size: 2.8rem;
     padding: 2rem 0;
     color: $color-white;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.2;
   }
 
   &__grid-box {
@@ -71,7 +73,7 @@
   }
 
   &__img {
-    width: 77%;
+    width: 65%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     padding-top: 1rem;

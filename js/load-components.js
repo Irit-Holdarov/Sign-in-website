@@ -1,6 +1,7 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Function to include HTML files
   function includeHTML() {
     return new Promise((resolve) => {
       const elements = document.querySelectorAll('[data-include]')
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  // Function to update navigation based on current page
   function updateNavigation() {
     const navList = document.getElementById('navList')
     const isHomePage = window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')
@@ -59,25 +61,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
       navList.innerHTML = menuItems
         .map(item => `
-          <li class="btn nav__item">
-            <a href="${item.href}">${item.text}</a>
-          </li>
-        `).join('')
+         <li class="btn nav__item">
+           <a href="${item.href}" onclick="scrollToSection(event, '${item.href}')">${item.text}</a>
+         </li>
+       `).join('')
     }
   }
 
+  // Function to scroll to section with offset
+  window.scrollToSection = function (event, href) {
+    if (href.includes('#')) {
+      event.preventDefault()
+      const targetId = href.split('#')[1];
+      const targetElement = document.getElementById(targetId)
+
+      if (targetElement) {
+        const offset = 80
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        })
+      }
+    }
+  }
+
+  // Mobile menu initialization function
   function initializeMobileMenu() {
     const hamburgerBtn = document.querySelector('.hamburger-menu')
     const headerNavigate = document.querySelector('.header__navigate')
 
     if (hamburgerBtn && headerNavigate) {
-      // טיפול בלחיצה על כפתור ההמבורגר
+      // Handle hamburger button click
       hamburgerBtn.addEventListener('click', function () {
         this.classList.toggle('active')
         headerNavigate.classList.toggle('active')
-      });
+      })
 
-      // סגירת התפריט בלחיצה על קישור
+      // Close menu when clicking a link
       const navLinks = headerNavigate.querySelectorAll('a')
       navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -86,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
       })
 
-      // סגירת התפריט בלחיצה מחוץ לתפריט
+      // Close menu when clicking outside
       document.addEventListener('click', function (event) {
         const isClickInside = headerNavigate.contains(event.target) ||
           hamburgerBtn.contains(event.target)
@@ -99,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // הפעלת כל הפונקציות בסדר הנכון
+  // Initialize all functions in correct order
   includeHTML().then(() => {
     initializeMobileMenu()
   })
